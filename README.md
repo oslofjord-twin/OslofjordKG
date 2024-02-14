@@ -6,6 +6,7 @@ Knowledge graph for the Climatebarometer for the Oslofjord
 
 Query used by runtime monitor. Gets different temperature values connected to atlantic cod (morhua). Would also like to get similar values for other species of fish.
 
+```
 SELECT
     ?maxSpawnTemp
     ?minSpawnTemp
@@ -29,6 +30,7 @@ WHERE {
     ?o6 owl:hasValue ?prefMinSpawnTemp ;
         owl:onProperty ex:preferredMinSpawningTemperature .
 }
+```
 
 ## Questions you want to ask the knowledgegraph: 
 

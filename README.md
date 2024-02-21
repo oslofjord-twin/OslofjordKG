@@ -32,6 +32,24 @@ WHERE {
 }
 ```
 
+
+```
+
+ASK WHERE{
+       ?fish rdfs:subClassOf ?b1 .
+       ?b1 owl:onProperty ast:Name .
+       ?b1 owl:hasValue ?name .
+       ?fish rdfs:subClassOf ?b .
+       ?fish rdfs:subClassOf ?b2 .
+       ?b owl:hasValue ?minTemp .
+       ?b owl:onProperty ast:minTemperature .
+       ?b2 owl:hasValue ?maxTemp .
+       ?b2 owl:onProperty ast:maxTemperature .
+       FILTER(?minTemp > xsd:double(temperature) && ?maxTemp < xsd:double(temperature) && ?name = xsd:string("name")) .
+}
+
+```
+
 ## Questions you want to ask the knowledgegraph: 
 
 It would be great to be able to query the knowledge graph to retrieve if a specific species can be found with data within the ranges of

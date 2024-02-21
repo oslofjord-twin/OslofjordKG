@@ -4,10 +4,15 @@ Knowledge graph for the Climatebarometer for the Oslofjord
 
 ## Queries:
 
-Query used by runtime monitor. Gets different temperature values connected to atlantic cod (morhua). Would also like to get similar values for other species of fish.
+The "ast:morhua" variable needs to be dynamic so that I can use this query for multiple different species of fish.
 
 ```
+PREFIX ast: <http://www.smolang.org/oslofjordDT#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
 SELECT
+    ?name
     ?maxSpawnTemp
     ?minSpawnTemp
     ?maxTemp
@@ -15,20 +20,22 @@ SELECT
     ?prefMaxSpawnTemp
     ?prefMinSpawnTemp
 WHERE {
-    ex:Morhua rdfs:subClassOf
-        ?o1, ?o2, ?o3, ?o4, ?o5, ?o6 .
+    ast:morhua rdfs:subClassOf
+        ?o1, ?o2, ?o3, ?o4, ?o5, ?o6, ?o7 .
+    ?o7 owl:hasValue ?name ;
+        owl:onProperty ast:Name .
     ?o1 owl:hasValue ?maxSpawnTemp ;
-        owl:onProperty ex:maxSpawningTemperature .
+        owl:onProperty ast:maxSpawningTemperature .
     ?o2 owl:hasValue ?minSpawnTemp ;
-        owl:onProperty ex:minSpawningTemperature .
+        owl:onProperty ast:minSpawningTemperature .
     ?o3 owl:hasValue ?maxTemp ;
-        owl:onProperty ex:maxTemperature .
+        owl:onProperty ast:maxTemperature .
     ?o4 owl:hasValue ?minTemp ;
-        owl:onProperty ex:minTemperature .
+        owl:onProperty ast:minTemperature .
     ?o5 owl:hasValue ?prefMaxSpawnTemp ;
-        owl:onProperty ex:preferredMaxSpawningTemperature .
+        owl:onProperty ast:preferredMaxSpawningTemperature .
     ?o6 owl:hasValue ?prefMinSpawnTemp ;
-        owl:onProperty ex:preferredMinSpawningTemperature .
+        owl:onProperty ast:preferredMinSpawningTemperature .
 }
 ```
 

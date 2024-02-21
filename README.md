@@ -52,7 +52,7 @@ ASK WHERE{
        ?b owl:onProperty ast:minTemperature .
        ?b2 owl:hasValue ?maxTemp .
        ?b2 owl:onProperty ast:maxTemperature .
-       FILTER(?minTemp > xsd:double(temperature) && ?maxTemp < xsd:double(temperature) && ?name = xsd:string("name")) .
+       FILTER(?minTemp <= xsd:double(5) && ?maxTemp >= xsd:double(5) && ?name = xsd:string("Atlantic Cod")) .
 }
 
 ```

@@ -682,330 +682,83 @@ _:b58   rdf:type            owl:Restriction ;
 
 ast:Latitude  rdf:type  owl:DatatypeProperty .
 
-ast:morhua  rdfs:subClassOf  _:b58 .
+ast:scombrus  rdfs:subClassOf  _:b58 .
 
 ast:ClimateVulnerability
         rdf:type  owl:DatatypeProperty .
 
 _:b59   rdf:type        owl:Restriction ;
-        owl:hasValue    "0.65"^^xsd:float ;
+        owl:hasValue    "0.1"^^xsd:float ;
         owl:onProperty  ast:ClimateVulnerability .
 
-ast:morhua  rdfs:subClassOf  _:b59 .
+ast:scombrus  rdfs:subClassOf  _:b59 .
 
 ast:FishingVulnerability
         rdf:type  owl:DatatypeProperty .
 
 _:b60   rdf:type        owl:Restriction ;
-        owl:hasValue    "0.39"^^xsd:float ;
-        owl:onProperty  ast:FishingVulnerability .
-
-ast:morhua  rdfs:subClassOf  _:b60 ;
-        rdfs:subClassOf  ast:Species .
-
-ast:Chordata  rdfs:subClassOf  ast:Animalia .
-
-ast:superba  rdfs:subClassOf  _:b61 .
-
-_:b61   rdf:type            owl:Restriction ;
-        owl:someValuesFrom  ast:morhua ;
-        owl:onProperty      ast:eatenBy .
-
-ast:eatenBy  rdf:type  owl:ObjectProperty .
-
-ast:morhua  rdf:type  owl:Class .
-
-ast:scombrus  rdfs:subClassOf  _:b62 .
-
-_:b62   rdf:type            owl:Restriction ;
-        owl:someValuesFrom  ast:morhua ;
-        owl:onProperty      ast:eatenBy .
-
-ast:eatenBy  rdf:type  owl:ObjectProperty .
-
-ast:morhua  rdf:type  owl:Class .
-
-ast:GlobalCategory  rdf:type  owl:DatatypeProperty .
-
-_:b63   rdf:type        owl:Restriction ;
-        owl:hasValue    "VU - Vulnerable" ;
-        owl:onProperty  ast:GlobalCategory .
-
-ast:morhua  rdfs:subClassOf  _:b63 .
-
-ast:maxDepthThrivesOn
-        rdf:type  owl:DatatypeProperty .
-
-_:b64   rdf:type        owl:Restriction ;
-        owl:hasValue    "200"^^xsd:double ;
-        owl:onProperty  ast:maxDepthThrivesOn .
-
-ast:morhua  rdfs:subClassOf  _:b64 .
-
-ast:minSpawningDepth  rdf:type  owl:DatatypeProperty .
-
-_:b65   rdf:type        owl:Restriction ;
-        owl:hasValue    "50"^^xsd:double ;
-        owl:onProperty  ast:minSpawningDepth .
-
-ast:morhua  rdfs:subClassOf  _:b65 .
-
-ast:CommonLength  rdf:type  owl:DatatypeProperty .
-
-_:b66   rdf:type        owl:Restriction ;
-        owl:hasValue    "100"^^xsd:float ;
-        owl:onProperty  ast:CommonLength .
-
-ast:morhua  rdfs:subClassOf  _:b66 .
-
-ast:maxDepth  rdf:type  owl:DatatypeProperty .
-
-_:b67   rdf:type        owl:Restriction ;
-        owl:hasValue    "600"^^xsd:double ;
-        owl:onProperty  ast:maxDepth .
-
-ast:morhua  rdfs:subClassOf  _:b67 .
-
-ast:minDepth  rdf:type  owl:DatatypeProperty .
-
-_:b68   rdf:type        owl:Restriction ;
-        owl:hasValue    "0"^^xsd:double ;
-        owl:onProperty  ast:minDepth .
-
-ast:morhua  rdfs:subClassOf  _:b68 .
-
-ast:maxSpawningTemperature
-        rdf:type  owl:DatatypeProperty .
-
-_:b69   rdf:type        owl:Restriction ;
-        owl:hasValue    "12"^^xsd:double ;
-        owl:onProperty  ast:maxSpawningTemperature .
-
-ast:morhua  rdfs:subClassOf  _:b69 ;
-        rdfs:subClassOf  ast:Fish .
-
-ast:minDepthThrivesOn
-        rdf:type  owl:DatatypeProperty .
-
-_:b70   rdf:type        owl:Restriction ;
-        owl:hasValue    "150"^^xsd:double ;
-        owl:onProperty  ast:minDepthThrivesOn .
-
-ast:morhua  rdfs:subClassOf  _:b70 .
-
-xsd:float  rdf:type  rdfs:Datatype .
-
-_:b71   rdf:type            owl:Restriction ;
-        owl:someValuesFrom  xsd:float ;
-        owl:onProperty      ast:Longitude .
-
-ast:Longitude  rdf:type  owl:DatatypeProperty .
-
-ast:morhua  rdfs:subClassOf  _:b71 .
-
-ast:Gadiformes  rdfs:subClassOf  ast:Actinopterygii .
-
-ast:maxTemperature  rdf:type  owl:DatatypeProperty .
-
-_:b72   rdf:type        owl:Restriction ;
-        owl:hasValue    "15"^^xsd:double ;
-        owl:onProperty  ast:maxTemperature .
-
-ast:morhua  rdfs:subClassOf  _:b72 .
-
-ast:preferredMaxSpawningTemperature
-        rdf:type  owl:DatatypeProperty .
-
-_:b73   rdf:type        owl:Restriction ;
-        owl:hasValue    "6"^^xsd:double ;
-        owl:onProperty  ast:preferredMaxSpawningTemperature .
-
-ast:morhua  rdfs:subClassOf  _:b73 ;
-        rdfs:subClassOf  ast:Gadus .
-
-ast:Animalia  rdfs:subClassOf  ast:Eukaryota .
-
-ast:Gadus  rdfs:subClassOf  ast:Gadidae .
-
-ast:ScientificName  rdf:type  owl:DatatypeProperty .
-
-_:b74   rdf:type        owl:Restriction ;
-        owl:hasValue    "Gadus morhua" ;
-        owl:onProperty  ast:ScientificName .
-
-ast:morhua  rdfs:subClassOf  _:b74 ;
-        rdfs:subClassOf  _:b75 .
-
-_:b75   rdf:type            owl:Restriction ;
-        owl:someValuesFrom  ast:superba ;
-        owl:onProperty      ast:eats .
-
-ast:eats  rdf:type  owl:ObjectProperty .
-
-ast:superba  rdf:type  owl:Class .
-
-ast:morhua  rdfs:subClassOf  _:b76 .
-
-_:b76   rdf:type            owl:Restriction ;
-        owl:someValuesFrom  ast:scombrus ;
-        owl:onProperty      ast:eats .
-
-ast:eats  rdf:type  owl:ObjectProperty .
-
-ast:scombrus  rdf:type  owl:Class .
-
-ast:NorwegianCategory
-        rdf:type  owl:DatatypeProperty .
-
-_:b77   rdf:type        owl:Restriction ;
-        owl:hasValue    "LC - Viable" ;
-        owl:onProperty  ast:NorwegianCategory .
-
-ast:morhua  rdfs:subClassOf  _:b77 .
-
-ast:minSpawningTemperature
-        rdf:type  owl:DatatypeProperty .
-
-_:b78   rdf:type        owl:Restriction ;
-        owl:hasValue    "0"^^xsd:double ;
-        owl:onProperty  ast:minSpawningTemperature .
-
-ast:morhua  rdfs:subClassOf  _:b78 .
-
-ast:Name  rdf:type  owl:DatatypeProperty .
-
-_:b79   rdf:type        owl:Restriction ;
-        owl:hasValue    "Atlantic Cod" ;
-        owl:onProperty  ast:Name .
-
-ast:morhua  rdfs:subClassOf  _:b79 .
-
-ast:Actinopterygii  rdfs:subClassOf  ast:Chordata .
-
-ast:preferredMinSpawningTemperature
-        rdf:type  owl:DatatypeProperty .
-
-_:b80   rdf:type        owl:Restriction ;
-        owl:hasValue    "0"^^xsd:double ;
-        owl:onProperty  ast:preferredMinSpawningTemperature .
-
-ast:morhua  rdfs:subClassOf  _:b80 .
-
-ast:Gadidae  rdfs:subClassOf  ast:Gadiformes .
-
-ast:MaxLength  rdf:type  owl:DatatypeProperty .
-
-_:b81   rdf:type        owl:Restriction ;
-        owl:hasValue    "200"^^xsd:float ;
-        owl:onProperty  ast:MaxLength .
-
-ast:morhua  rdfs:subClassOf  _:b81 .
-
-ast:minTemperature  rdf:type  owl:DatatypeProperty .
-
-_:b82   rdf:type        owl:Restriction ;
-        owl:hasValue    "0"^^xsd:double ;
-        owl:onProperty  ast:minTemperature .
-
-ast:morhua  rdfs:subClassOf  _:b82 .
-
-ast:maxSpawningDepth  rdf:type  owl:DatatypeProperty .
-
-_:b83   rdf:type        owl:Restriction ;
-        owl:hasValue    "200"^^xsd:double ;
-        owl:onProperty  ast:maxSpawningDepth .
-
-ast:morhua  rdfs:subClassOf  _:b83 .
-
-xsd:float  rdf:type  rdfs:Datatype .
-
-_:b84   rdf:type            owl:Restriction ;
-        owl:someValuesFrom  xsd:float ;
-        owl:onProperty      ast:Latitude .
-
-ast:Latitude  rdf:type  owl:DatatypeProperty .
-
-ast:scombrus  rdfs:subClassOf  _:b84 .
-
-ast:ClimateVulnerability
-        rdf:type  owl:DatatypeProperty .
-
-_:b85   rdf:type        owl:Restriction ;
-        owl:hasValue    "0.1"^^xsd:float ;
-        owl:onProperty  ast:ClimateVulnerability .
-
-ast:scombrus  rdfs:subClassOf  _:b85 .
-
-ast:FishingVulnerability
-        rdf:type  owl:DatatypeProperty .
-
-_:b86   rdf:type        owl:Restriction ;
         owl:hasValue    "0.3"^^xsd:float ;
         owl:onProperty  ast:FishingVulnerability .
 
-ast:scombrus  rdfs:subClassOf  _:b86 ;
-        rdfs:subClassOf  ast:Species .
+ast:scombrus  rdfs:subClassOf  _:b60 .
 
 ast:Chordata  rdfs:subClassOf  ast:Animalia .
-
-ast:superba  rdfs:subClassOf  _:b87 .
-
-_:b87   rdf:type            owl:Restriction ;
-        owl:someValuesFrom  ast:scombrus ;
-        owl:onProperty      ast:eatenBy .
-
-ast:eatenBy  rdf:type  owl:ObjectProperty .
-
-ast:scombrus  rdf:type  owl:Class .
 
 ast:maxDepthThrivesOn
         rdf:type  owl:DatatypeProperty .
 
-_:b88   rdf:type        owl:Restriction ;
+_:b61   rdf:type        owl:Restriction ;
         owl:hasValue    "200"^^xsd:double ;
         owl:onProperty  ast:maxDepthThrivesOn .
 
-ast:scombrus  rdfs:subClassOf  _:b88 .
+ast:scombrus  rdfs:subClassOf  _:b61 .
 
 ast:maxDepth  rdf:type  owl:DatatypeProperty .
 
-_:b89   rdf:type        owl:Restriction ;
+_:b62   rdf:type        owl:Restriction ;
         owl:hasValue    "1000"^^xsd:double ;
         owl:onProperty  ast:maxDepth .
 
-ast:scombrus  rdfs:subClassOf  _:b89 .
+ast:scombrus  rdfs:subClassOf  _:b62 .
 
 ast:minDepth  rdf:type  owl:DatatypeProperty .
 
-_:b90   rdf:type        owl:Restriction ;
+_:b63   rdf:type        owl:Restriction ;
         owl:hasValue    "0"^^xsd:double ;
         owl:onProperty  ast:minDepth .
 
-ast:scombrus  rdfs:subClassOf  _:b90 ;
+ast:scombrus  rdfs:subClassOf  _:b63 ;
         rdfs:subClassOf  ast:Fish .
 
 ast:minDepthThrivesOn
         rdf:type  owl:DatatypeProperty .
 
-_:b91   rdf:type        owl:Restriction ;
+_:b64   rdf:type        owl:Restriction ;
         owl:hasValue    "0"^^xsd:double ;
         owl:onProperty  ast:minDepthThrivesOn .
 
-ast:scombrus  rdfs:subClassOf  _:b91 .
+ast:scombrus  rdfs:subClassOf  _:b64 .
+
+ast:Scombriformes  rdfs:subClassOf  ast:Actinopterygii .
 
 xsd:float  rdf:type  rdfs:Datatype .
 
-_:b92   rdf:type            owl:Restriction ;
+_:b65   rdf:type            owl:Restriction ;
         owl:someValuesFrom  xsd:float ;
         owl:onProperty      ast:Longitude .
 
 ast:Longitude  rdf:type  owl:DatatypeProperty .
 
-ast:scombrus  rdfs:subClassOf  _:b92 .
+ast:scombrus  rdfs:subClassOf  _:b65 .
 
-ast:Scombriformes  rdfs:subClassOf  ast:Actinopterygii .
+ast:maxTemperature  rdf:type  owl:DatatypeProperty .
 
-ast:scombrus  rdfs:subClassOf  ast:Scomber .
+_:b66   rdf:type        owl:Restriction ;
+        owl:hasValue    "17.5"^^xsd:double ;
+        owl:onProperty  ast:maxTemperature .
+
+ast:scombrus  rdfs:subClassOf  _:b66 ;
+        rdfs:subClassOf  ast:Scomber .
 
 ast:Animalia  rdfs:subClassOf  ast:Eukaryota .
 
@@ -1013,14 +766,14 @@ ast:Scomber  rdfs:subClassOf  ast:Scombridae .
 
 ast:ScientificName  rdf:type  owl:DatatypeProperty .
 
-_:b93   rdf:type        owl:Restriction ;
+_:b67   rdf:type        owl:Restriction ;
         owl:hasValue    "Scomber scombrus" ;
         owl:onProperty  ast:ScientificName .
 
-ast:scombrus  rdfs:subClassOf  _:b93 ;
-        rdfs:subClassOf  _:b94 .
+ast:scombrus  rdfs:subClassOf  _:b67 ;
+        rdfs:subClassOf  _:b68 .
 
-_:b94   rdf:type            owl:Restriction ;
+_:b68   rdf:type            owl:Restriction ;
         owl:someValuesFrom  ast:superba ;
         owl:onProperty      ast:eats .
 
@@ -1028,73 +781,59 @@ ast:eats  rdf:type  owl:ObjectProperty .
 
 ast:superba  rdf:type  owl:Class .
 
+ast:Actinopterygii  rdfs:subClassOf  ast:Chordata .
+
 ast:Name  rdf:type  owl:DatatypeProperty .
 
-_:b95   rdf:type        owl:Restriction ;
+_:b69   rdf:type        owl:Restriction ;
         owl:hasValue    "Atlantic Mackerel" ;
         owl:onProperty  ast:Name .
 
-ast:scombrus  rdfs:subClassOf  _:b95 .
-
-ast:Actinopterygii  rdfs:subClassOf  ast:Chordata .
+ast:scombrus  rdfs:subClassOf  _:b69 .
 
 ast:Scombridae  rdfs:subClassOf  ast:Scombriformes .
 
+ast:minTemperature  rdf:type  owl:DatatypeProperty .
+
+_:b70   rdf:type        owl:Restriction ;
+        owl:hasValue    "7"^^xsd:double ;
+        owl:onProperty  ast:minTemperature .
+
+ast:scombrus  rdfs:subClassOf  _:b70 .
+
 xsd:float  rdf:type  rdfs:Datatype .
 
-_:b96   rdf:type            owl:Restriction ;
+_:b71   rdf:type            owl:Restriction ;
         owl:someValuesFrom  xsd:float ;
         owl:onProperty      ast:Latitude .
 
 ast:Latitude  rdf:type  owl:DatatypeProperty .
 
-ast:phocoena  rdfs:subClassOf  _:b96 ;
-        rdfs:subClassOf  ast:Species .
+ast:phocoena  rdfs:subClassOf  _:b71 .
 
 ast:Chordata  rdfs:subClassOf  ast:Animalia .
 
-ast:scombrus  rdfs:subClassOf  _:b97 .
-
-_:b97   rdf:type            owl:Restriction ;
-        owl:someValuesFrom  ast:phocoena ;
-        owl:onProperty      ast:eatenBy .
-
-ast:eatenBy  rdf:type  owl:ObjectProperty .
-
-ast:phocoena  rdf:type  owl:Class .
-
-ast:macrosoma  rdfs:subClassOf  _:b98 .
-
-_:b98   rdf:type            owl:Restriction ;
-        owl:someValuesFrom  ast:phocoena ;
-        owl:onProperty      ast:eatenBy .
-
-ast:eatenBy  rdf:type  owl:ObjectProperty .
-
-ast:phocoena  rdf:type  owl:Class .
-
 ast:CommonLength  rdf:type  owl:DatatypeProperty .
 
-_:b99   rdf:type        owl:Restriction ;
+_:b72   rdf:type        owl:Restriction ;
         owl:hasValue    "190"^^xsd:float ;
         owl:onProperty  ast:CommonLength .
 
-ast:phocoena  rdfs:subClassOf  _:b99 ;
+ast:phocoena  rdfs:subClassOf  _:b72 ;
         rdfs:subClassOf  ast:Whale .
+
+ast:Artiodactyla  rdfs:subClassOf  ast:Mammalia .
 
 xsd:float  rdf:type  rdfs:Datatype .
 
-_:b100  rdf:type            owl:Restriction ;
+_:b73   rdf:type            owl:Restriction ;
         owl:someValuesFrom  xsd:float ;
         owl:onProperty      ast:Longitude .
 
 ast:Longitude  rdf:type  owl:DatatypeProperty .
 
-ast:phocoena  rdfs:subClassOf  _:b100 .
-
-ast:Artiodactyla  rdfs:subClassOf  ast:Mammalia .
-
-ast:phocoena  rdfs:subClassOf  ast:Phocoena .
+ast:phocoena  rdfs:subClassOf  _:b73 ;
+        rdfs:subClassOf  ast:Phocoena .
 
 ast:Animalia  rdfs:subClassOf  ast:Eukaryota .
 
@@ -1102,14 +841,14 @@ ast:Phocoena  rdfs:subClassOf  ast:Phocoenidae .
 
 ast:ScientificName  rdf:type  owl:DatatypeProperty .
 
-_:b101  rdf:type        owl:Restriction ;
+_:b74   rdf:type        owl:Restriction ;
         owl:hasValue    "Phocoena phocoena" ;
         owl:onProperty  ast:ScientificName .
 
-ast:phocoena  rdfs:subClassOf  _:b101 ;
-        rdfs:subClassOf  _:b102 .
+ast:phocoena  rdfs:subClassOf  _:b74 ;
+        rdfs:subClassOf  _:b75 .
 
-_:b102  rdf:type            owl:Restriction ;
+_:b75   rdf:type            owl:Restriction ;
         owl:someValuesFrom  ast:scombrus ;
         owl:onProperty      ast:eats .
 
@@ -1117,9 +856,9 @@ ast:eats  rdf:type  owl:ObjectProperty .
 
 ast:scombrus  rdf:type  owl:Class .
 
-ast:phocoena  rdfs:subClassOf  _:b103 .
+ast:phocoena  rdfs:subClassOf  _:b76 .
 
-_:b103  rdf:type            owl:Restriction ;
+_:b76   rdf:type            owl:Restriction ;
         owl:someValuesFrom  ast:macrosoma ;
         owl:onProperty      ast:eats .
 
@@ -1127,74 +866,53 @@ ast:eats  rdf:type  owl:ObjectProperty .
 
 ast:macrosoma  rdf:type  owl:Class .
 
+ast:Mammalia  rdfs:subClassOf  ast:Chordata .
+
 ast:Name  rdf:type  owl:DatatypeProperty .
 
-_:b104  rdf:type        owl:Restriction ;
+_:b77   rdf:type        owl:Restriction ;
         owl:hasValue    "Harbour Porpoise" ;
         owl:onProperty  ast:Name .
 
-ast:phocoena  rdfs:subClassOf  _:b104 .
-
-ast:Mammalia  rdfs:subClassOf  ast:Chordata .
+ast:phocoena  rdfs:subClassOf  _:b77 .
 
 ast:Phocoenidae  rdfs:subClassOf  ast:Artiodactyla .
 
 ast:MaxLength  rdf:type  owl:DatatypeProperty .
 
-_:b105  rdf:type        owl:Restriction ;
+_:b78   rdf:type        owl:Restriction ;
         owl:hasValue    "150"^^xsd:float ;
         owl:onProperty  ast:MaxLength .
 
-ast:phocoena  rdfs:subClassOf  _:b105 .
+ast:phocoena  rdfs:subClassOf  _:b78 .
 
 xsd:float  rdf:type  rdfs:Datatype .
 
-_:b106  rdf:type            owl:Restriction ;
+_:b79   rdf:type            owl:Restriction ;
         owl:someValuesFrom  xsd:float ;
         owl:onProperty      ast:Latitude .
 
 ast:Latitude  rdf:type  owl:DatatypeProperty .
 
-ast:superba  rdfs:subClassOf  _:b106 ;
-        rdfs:subClassOf  ast:Species .
+ast:superba  rdfs:subClassOf  _:b79 .
 
 ast:Arthropoda  rdfs:subClassOf  ast:Animalia .
 
-ast:Phytoplankton  rdfs:subClassOf  _:b107 .
-
-_:b107  rdf:type            owl:Restriction ;
-        owl:someValuesFrom  ast:superba ;
-        owl:onProperty      ast:eatenBy .
-
-ast:eatenBy  rdf:type  owl:ObjectProperty .
-
-ast:superba  rdf:type  owl:Class .
-
-ast:Zooplankton  rdfs:subClassOf  _:b108 .
-
-_:b108  rdf:type            owl:Restriction ;
-        owl:someValuesFrom  ast:superba ;
-        owl:onProperty      ast:eatenBy .
-
-ast:eatenBy  rdf:type  owl:ObjectProperty .
-
-ast:superba  rdf:type    owl:Class ;
-        rdfs:subClassOf  ast:Crustacean ;
+ast:superba  rdfs:subClassOf  ast:Crustacean ;
         rdfs:subClassOf  ast:Zooplankton .
+
+ast:Euphausiacea  rdfs:subClassOf  ast:Malacostraca .
 
 xsd:float  rdf:type  rdfs:Datatype .
 
-_:b109  rdf:type            owl:Restriction ;
+_:b80   rdf:type            owl:Restriction ;
         owl:someValuesFrom  xsd:float ;
         owl:onProperty      ast:Longitude .
 
 ast:Longitude  rdf:type  owl:DatatypeProperty .
 
-ast:superba  rdfs:subClassOf  _:b109 .
-
-ast:Euphausiacea  rdfs:subClassOf  ast:Malacostraca .
-
-ast:superba  rdfs:subClassOf  ast:Euphausia .
+ast:superba  rdfs:subClassOf  _:b80 ;
+        rdfs:subClassOf  ast:Euphausia .
 
 ast:Animalia  rdfs:subClassOf  ast:Eukaryota .
 
@@ -1202,14 +920,14 @@ ast:Euphausia  rdfs:subClassOf  ast:Euphausiidae .
 
 ast:ScientificName  rdf:type  owl:DatatypeProperty .
 
-_:b110  rdf:type        owl:Restriction ;
+_:b81   rdf:type        owl:Restriction ;
         owl:hasValue    "Euphausia superba" ;
         owl:onProperty  ast:ScientificName .
 
-ast:superba  rdfs:subClassOf  _:b110 ;
-        rdfs:subClassOf  _:b111 .
+ast:superba  rdfs:subClassOf  _:b81 ;
+        rdfs:subClassOf  _:b82 .
 
-_:b111  rdf:type            owl:Restriction ;
+_:b82   rdf:type            owl:Restriction ;
         owl:someValuesFrom  ast:Phytoplankton ;
         owl:onProperty      ast:eats .
 
@@ -1217,9 +935,9 @@ ast:eats  rdf:type  owl:ObjectProperty .
 
 ast:Phytoplankton  rdf:type  owl:Class .
 
-ast:superba  rdfs:subClassOf  _:b112 .
+ast:superba  rdfs:subClassOf  _:b83 .
 
-_:b112  rdf:type            owl:Restriction ;
+_:b83   rdf:type            owl:Restriction ;
         owl:someValuesFrom  ast:Zooplankton ;
         owl:onProperty      ast:eats .
 
@@ -1227,46 +945,44 @@ ast:eats  rdf:type  owl:ObjectProperty .
 
 ast:Zooplankton  rdf:type  owl:Class .
 
+ast:Malacostraca  rdfs:subClassOf  ast:Arthropoda .
+
 ast:Name  rdf:type  owl:DatatypeProperty .
 
-_:b113  rdf:type        owl:Restriction ;
+_:b84   rdf:type        owl:Restriction ;
         owl:hasValue    "Atlantic Krill" ;
         owl:onProperty  ast:Name .
 
-ast:superba  rdfs:subClassOf  _:b113 .
-
-ast:Malacostraca  rdfs:subClassOf  ast:Arthropoda .
+ast:superba  rdfs:subClassOf  _:b84 .
 
 ast:Euphausiidae  rdfs:subClassOf  ast:Euphausiacea .
 
 xsd:float  rdf:type  rdfs:Datatype .
 
-_:b114  rdf:type            owl:Restriction ;
+_:b85   rdf:type            owl:Restriction ;
         owl:someValuesFrom  xsd:float ;
         owl:onProperty      ast:Latitude .
 
 ast:Latitude  rdf:type  owl:DatatypeProperty .
 
-ast:vesiculosus  rdfs:subClassOf  _:b114 ;
-        rdfs:subClassOf  ast:Species .
+ast:vesiculosus  rdfs:subClassOf  _:b85 .
 
 ast:Gyrista  rdfs:subClassOf  ast:Protist .
 
 ast:vesiculosus  rdfs:subClassOf  ast:Algae .
 
+ast:Fucales  rdfs:subClassOf  ast:Phaeophyceae .
+
 xsd:float  rdf:type  rdfs:Datatype .
 
-_:b115  rdf:type            owl:Restriction ;
+_:b86   rdf:type            owl:Restriction ;
         owl:someValuesFrom  xsd:float ;
         owl:onProperty      ast:Longitude .
 
 ast:Longitude  rdf:type  owl:DatatypeProperty .
 
-ast:vesiculosus  rdfs:subClassOf  _:b115 .
-
-ast:Fucales  rdfs:subClassOf  ast:Phaeophyceae .
-
-ast:vesiculosus  rdfs:subClassOf  ast:Focus .
+ast:vesiculosus  rdfs:subClassOf  _:b86 ;
+        rdfs:subClassOf  ast:Focus .
 
 ast:Protist  rdfs:subClassOf  ast:Eukaryota .
 
@@ -1274,52 +990,50 @@ ast:Focus  rdfs:subClassOf  ast:Fucaceae .
 
 ast:ScientificName  rdf:type  owl:DatatypeProperty .
 
-_:b116  rdf:type        owl:Restriction ;
+_:b87   rdf:type        owl:Restriction ;
         owl:hasValue    "Focus vesiculosus" ;
         owl:onProperty  ast:ScientificName .
 
-ast:vesiculosus  rdfs:subClassOf  _:b116 .
+ast:vesiculosus  rdfs:subClassOf  _:b87 .
+
+ast:Phaeophyceae  rdfs:subClassOf  ast:Gyrista .
 
 ast:Name  rdf:type  owl:DatatypeProperty .
 
-_:b117  rdf:type        owl:Restriction ;
+_:b88   rdf:type        owl:Restriction ;
         owl:hasValue    "Bladderwrack" ;
         owl:onProperty  ast:Name .
 
-ast:vesiculosus  rdfs:subClassOf  _:b117 .
-
-ast:Phaeophyceae  rdfs:subClassOf  ast:Gyrista .
+ast:vesiculosus  rdfs:subClassOf  _:b88 .
 
 ast:Fucaceae  rdfs:subClassOf  ast:Fucales .
 
 xsd:float  rdf:type  rdfs:Datatype .
 
-_:b118  rdf:type            owl:Restriction ;
+_:b89   rdf:type            owl:Restriction ;
         owl:someValuesFrom  xsd:float ;
         owl:onProperty      ast:Latitude .
 
 ast:Latitude  rdf:type  owl:DatatypeProperty .
 
-ast:marina  rdfs:subClassOf  _:b118 ;
-        rdfs:subClassOf  ast:Species .
+ast:marina  rdfs:subClassOf  _:b89 .
 
 ast:Magnoliophyta  rdfs:subClassOf  ast:Plantae .
 
 ast:marina  rdfs:subClassOf  ast:Plant .
 
+ast:Alismatales  rdfs:subClassOf  ast:Monocots .
+
 xsd:float  rdf:type  rdfs:Datatype .
 
-_:b119  rdf:type            owl:Restriction ;
+_:b90   rdf:type            owl:Restriction ;
         owl:someValuesFrom  xsd:float ;
         owl:onProperty      ast:Longitude .
 
 ast:Longitude  rdf:type  owl:DatatypeProperty .
 
-ast:marina  rdfs:subClassOf  _:b119 .
-
-ast:Alismatales  rdfs:subClassOf  ast:Monocots .
-
-ast:marina  rdfs:subClassOf  ast:Zostera .
+ast:marina  rdfs:subClassOf  _:b90 ;
+        rdfs:subClassOf  ast:Zostera .
 
 ast:Plantae  rdfs:subClassOf  ast:Eukaryota .
 
@@ -1327,52 +1041,50 @@ ast:Zostera  rdfs:subClassOf  ast:Zosteraceae .
 
 ast:ScientificName  rdf:type  owl:DatatypeProperty .
 
-_:b120  rdf:type        owl:Restriction ;
+_:b91   rdf:type        owl:Restriction ;
         owl:hasValue    "Zostera marina" ;
         owl:onProperty  ast:ScientificName .
 
-ast:marina  rdfs:subClassOf  _:b120 .
+ast:marina  rdfs:subClassOf  _:b91 .
+
+ast:Monocots  rdfs:subClassOf  ast:Magnoliophyta .
 
 ast:Name  rdf:type  owl:DatatypeProperty .
 
-_:b121  rdf:type        owl:Restriction ;
+_:b92   rdf:type        owl:Restriction ;
         owl:hasValue    "Eelgrass" ;
         owl:onProperty  ast:Name .
 
-ast:marina  rdfs:subClassOf  _:b121 .
-
-ast:Monocots  rdfs:subClassOf  ast:Magnoliophyta .
+ast:marina  rdfs:subClassOf  _:b92 .
 
 ast:Zosteraceae  rdfs:subClassOf  ast:Alismatales .
 
 xsd:float  rdf:type  rdfs:Datatype .
 
-_:b122  rdf:type            owl:Restriction ;
+_:b93   rdf:type            owl:Restriction ;
         owl:someValuesFrom  xsd:float ;
         owl:onProperty      ast:Latitude .
 
 ast:Latitude  rdf:type  owl:DatatypeProperty .
 
-ast:edulis  rdfs:subClassOf  _:b122 ;
-        rdfs:subClassOf  ast:Species .
+ast:edulis  rdfs:subClassOf  _:b93 .
 
 ast:Mollusca  rdfs:subClassOf  ast:Animalia .
 
 ast:edulis  rdfs:subClassOf  ast:Shell .
 
+ast:Ostreida  rdfs:subClassOf  ast:Bivalvia .
+
 xsd:float  rdf:type  rdfs:Datatype .
 
-_:b123  rdf:type            owl:Restriction ;
+_:b94   rdf:type            owl:Restriction ;
         owl:someValuesFrom  xsd:float ;
         owl:onProperty      ast:Longitude .
 
 ast:Longitude  rdf:type  owl:DatatypeProperty .
 
-ast:edulis  rdfs:subClassOf  _:b123 .
-
-ast:Ostreida  rdfs:subClassOf  ast:Bivalvia .
-
-ast:edulis  rdfs:subClassOf  ast:Ostrea .
+ast:edulis  rdfs:subClassOf  _:b94 ;
+        rdfs:subClassOf  ast:Ostrea .
 
 ast:Animalia  rdfs:subClassOf  ast:Eukaryota .
 
@@ -1380,52 +1092,50 @@ ast:Ostrea  rdfs:subClassOf  ast:Ostreidae .
 
 ast:ScientificName  rdf:type  owl:DatatypeProperty .
 
-_:b124  rdf:type        owl:Restriction ;
+_:b95   rdf:type        owl:Restriction ;
         owl:hasValue    "Ostrea edulis" ;
         owl:onProperty  ast:ScientificName .
 
-ast:edulis  rdfs:subClassOf  _:b124 .
+ast:edulis  rdfs:subClassOf  _:b95 .
+
+ast:Bivalvia  rdfs:subClassOf  ast:Mollusca .
 
 ast:Name  rdf:type  owl:DatatypeProperty .
 
-_:b125  rdf:type        owl:Restriction ;
+_:b96   rdf:type        owl:Restriction ;
         owl:hasValue    "European Flat Oyster" ;
         owl:onProperty  ast:Name .
 
-ast:edulis  rdfs:subClassOf  _:b125 .
-
-ast:Bivalvia  rdfs:subClassOf  ast:Mollusca .
+ast:edulis  rdfs:subClassOf  _:b96 .
 
 ast:Ostreidae  rdfs:subClassOf  ast:Ostreida .
 
 xsd:float  rdf:type  rdfs:Datatype .
 
-_:b126  rdf:type            owl:Restriction ;
+_:b97   rdf:type            owl:Restriction ;
         owl:someValuesFrom  xsd:float ;
         owl:onProperty      ast:Latitude .
 
 ast:Latitude  rdf:type  owl:DatatypeProperty .
 
-ast:droebachiensis  rdfs:subClassOf  _:b126 ;
-        rdfs:subClassOf  ast:Species .
+ast:droebachiensis  rdfs:subClassOf  _:b97 .
 
 ast:Echinodermata  rdfs:subClassOf  ast:Animalia .
 
 ast:droebachiensis  rdfs:subClassOf  ast:SeaUrchin .
 
+ast:Echinoida  rdfs:subClassOf  ast:Echinoidea .
+
 xsd:float  rdf:type  rdfs:Datatype .
 
-_:b127  rdf:type            owl:Restriction ;
+_:b98   rdf:type            owl:Restriction ;
         owl:someValuesFrom  xsd:float ;
         owl:onProperty      ast:Longitude .
 
 ast:Longitude  rdf:type  owl:DatatypeProperty .
 
-ast:droebachiensis  rdfs:subClassOf  _:b127 .
-
-ast:Echinoida  rdfs:subClassOf  ast:Echinoidea .
-
-ast:droebachiensis  rdfs:subClassOf  ast:Strongylocentrotus .
+ast:droebachiensis  rdfs:subClassOf  _:b98 ;
+        rdfs:subClassOf  ast:Strongylocentrotus .
 
 ast:Animalia  rdfs:subClassOf  ast:Eukaryota .
 
@@ -1434,53 +1144,51 @@ ast:Strongylocentrotus
 
 ast:ScientificName  rdf:type  owl:DatatypeProperty .
 
-_:b128  rdf:type        owl:Restriction ;
+_:b99   rdf:type        owl:Restriction ;
         owl:hasValue    "Strongylocentrotus droebachiensis" ;
         owl:onProperty  ast:ScientificName .
 
-ast:droebachiensis  rdfs:subClassOf  _:b128 .
+ast:droebachiensis  rdfs:subClassOf  _:b99 .
+
+ast:Echinoidea  rdfs:subClassOf  ast:Echinodermata .
 
 ast:Name  rdf:type  owl:DatatypeProperty .
 
-_:b129  rdf:type        owl:Restriction ;
+_:b100  rdf:type        owl:Restriction ;
         owl:hasValue    "Green Sea Urchin" ;
         owl:onProperty  ast:Name .
 
-ast:droebachiensis  rdfs:subClassOf  _:b129 .
-
-ast:Echinoidea  rdfs:subClassOf  ast:Echinodermata .
+ast:droebachiensis  rdfs:subClassOf  _:b100 .
 
 ast:Strongylocentrotidae
         rdfs:subClassOf  ast:Echinoida .
 
 xsd:float  rdf:type  rdfs:Datatype .
 
-_:b130  rdf:type            owl:Restriction ;
+_:b101  rdf:type            owl:Restriction ;
         owl:someValuesFrom  xsd:float ;
         owl:onProperty      ast:Latitude .
 
 ast:Latitude  rdf:type  owl:DatatypeProperty .
 
-ast:phosphorea  rdfs:subClassOf  _:b130 ;
-        rdfs:subClassOf  ast:Species .
+ast:phosphorea  rdfs:subClassOf  _:b101 .
 
 ast:Cnidaria  rdfs:subClassOf  ast:Animalia .
 
 ast:phosphorea  rdfs:subClassOf  ast:Coral .
 
+ast:Pennatulacea  rdfs:subClassOf  ast:Anthozoa .
+
 xsd:float  rdf:type  rdfs:Datatype .
 
-_:b131  rdf:type            owl:Restriction ;
+_:b102  rdf:type            owl:Restriction ;
         owl:someValuesFrom  xsd:float ;
         owl:onProperty      ast:Longitude .
 
 ast:Longitude  rdf:type  owl:DatatypeProperty .
 
-ast:phosphorea  rdfs:subClassOf  _:b131 .
-
-ast:Pennatulacea  rdfs:subClassOf  ast:Anthozoa .
-
-ast:phosphorea  rdfs:subClassOf  ast:Pennatula .
+ast:phosphorea  rdfs:subClassOf  _:b102 ;
+        rdfs:subClassOf  ast:Pennatula .
 
 ast:Animalia  rdfs:subClassOf  ast:Eukaryota .
 
@@ -1488,53 +1196,51 @@ ast:Pennatula  rdfs:subClassOf  ast:Pennatulidae .
 
 ast:ScientificName  rdf:type  owl:DatatypeProperty .
 
-_:b132  rdf:type        owl:Restriction ;
+_:b103  rdf:type        owl:Restriction ;
         owl:hasValue    "Pennatula phosphorea" ;
         owl:onProperty  ast:ScientificName .
 
-ast:phosphorea  rdfs:subClassOf  _:b132 .
+ast:phosphorea  rdfs:subClassOf  _:b103 .
+
+ast:Anthozoa  rdfs:subClassOf  ast:Cnidaria .
 
 ast:Name  rdf:type  owl:DatatypeProperty .
 
-_:b133  rdf:type        owl:Restriction ;
+_:b104  rdf:type        owl:Restriction ;
         owl:hasValue    "Common Sea Pen" ;
         owl:onProperty  ast:Name .
 
-ast:phosphorea  rdfs:subClassOf  _:b133 .
-
-ast:Anthozoa  rdfs:subClassOf  ast:Cnidaria .
+ast:phosphorea  rdfs:subClassOf  _:b104 .
 
 ast:Pennatulidae  rdfs:subClassOf  ast:Pennatulacea .
 
 xsd:float  rdf:type  rdfs:Datatype .
 
-_:b134  rdf:type            owl:Restriction ;
+_:b105  rdf:type            owl:Restriction ;
         owl:someValuesFrom  xsd:float ;
         owl:onProperty      ast:Latitude .
 
 ast:Latitude  rdf:type  owl:DatatypeProperty .
 
-ast:salmonis  rdfs:subClassOf  _:b134 ;
-        rdfs:subClassOf  ast:Species .
+ast:salmonis  rdfs:subClassOf  _:b105 .
 
 ast:Arthropoda  rdfs:subClassOf  ast:Animalia .
 
 ast:salmonis  rdfs:subClassOf  ast:Louse .
 
+ast:Siphonostomatoida
+        rdfs:subClassOf  ast:Copepoda .
+
 xsd:float  rdf:type  rdfs:Datatype .
 
-_:b135  rdf:type            owl:Restriction ;
+_:b106  rdf:type            owl:Restriction ;
         owl:someValuesFrom  xsd:float ;
         owl:onProperty      ast:Longitude .
 
 ast:Longitude  rdf:type  owl:DatatypeProperty .
 
-ast:salmonis  rdfs:subClassOf  _:b135 .
-
-ast:Siphonostomatoida
-        rdfs:subClassOf  ast:Copepoda .
-
-ast:salmonis  rdfs:subClassOf  ast:Lepeophtheirus .
+ast:salmonis  rdfs:subClassOf  _:b106 ;
+        rdfs:subClassOf  ast:Lepeophtheirus .
 
 ast:Animalia  rdfs:subClassOf  ast:Eukaryota .
 
@@ -1542,38 +1248,335 @@ ast:Lepeophtheirus  rdfs:subClassOf  ast:Caligidae .
 
 ast:ScientificName  rdf:type  owl:DatatypeProperty .
 
-_:b136  rdf:type        owl:Restriction ;
+_:b107  rdf:type        owl:Restriction ;
         owl:hasValue    "Lepeophtheirus salmonis" ;
         owl:onProperty  ast:ScientificName .
 
-ast:salmonis  rdfs:subClassOf  _:b136 .
+ast:salmonis  rdfs:subClassOf  _:b107 .
+
+ast:Copepoda  rdfs:subClassOf  ast:Arthropoda .
 
 ast:Name  rdf:type  owl:DatatypeProperty .
 
-_:b137  rdf:type        owl:Restriction ;
+_:b108  rdf:type        owl:Restriction ;
         owl:hasValue    "Salmon Louse" ;
         owl:onProperty  ast:Name .
 
-ast:salmonis  rdfs:subClassOf  _:b137 .
-
-ast:Copepoda  rdfs:subClassOf  ast:Arthropoda .
+ast:salmonis  rdfs:subClassOf  _:b108 .
 
 ast:Caligidae  rdfs:subClassOf  ast:Siphonostomatoida .
 
 xsd:float  rdf:type  rdfs:Datatype .
 
-_:b138  rdf:type            owl:Restriction ;
+_:b109  rdf:type            owl:Restriction ;
         owl:someValuesFrom  xsd:float ;
         owl:onProperty      ast:Latitude .
 
 ast:Latitude  rdf:type  owl:DatatypeProperty .
 
-ast:rubens  rdfs:subClassOf  _:b138 ;
-        rdfs:subClassOf  ast:Species .
+ast:rubens  rdfs:subClassOf  _:b109 .
 
 ast:Echinodermata  rdfs:subClassOf  ast:Animalia .
 
 ast:rubens  rdfs:subClassOf  ast:Starfish .
+
+ast:Forcipulatida  rdfs:subClassOf  ast:Asteroidea .
+
+xsd:float  rdf:type  rdfs:Datatype .
+
+_:b110  rdf:type            owl:Restriction ;
+        owl:someValuesFrom  xsd:float ;
+        owl:onProperty      ast:Longitude .
+
+ast:Longitude  rdf:type  owl:DatatypeProperty .
+
+ast:rubens  rdfs:subClassOf  _:b110 ;
+        rdfs:subClassOf  ast:Asterias .
+
+ast:Animalia  rdfs:subClassOf  ast:Eukaryota .
+
+ast:Asterias  rdfs:subClassOf  ast:Asteriidae .
+
+ast:ScientificName  rdf:type  owl:DatatypeProperty .
+
+_:b111  rdf:type        owl:Restriction ;
+        owl:hasValue    "Asterias rubens" ;
+        owl:onProperty  ast:ScientificName .
+
+ast:rubens  rdfs:subClassOf  _:b111 .
+
+ast:Asteroidea  rdfs:subClassOf  ast:Echinodermata .
+
+ast:Name  rdf:type  owl:DatatypeProperty .
+
+_:b112  rdf:type        owl:Restriction ;
+        owl:hasValue    "Common Starfish" ;
+        owl:onProperty  ast:Name .
+
+ast:rubens  rdfs:subClassOf  _:b112 .
+
+ast:Asteriidae  rdfs:subClassOf  ast:Forcipulatida .
+
+xsd:float  rdf:type  rdfs:Datatype .
+
+_:b113  rdf:type            owl:Restriction ;
+        owl:someValuesFrom  xsd:float ;
+        owl:onProperty      ast:Latitude .
+
+ast:Latitude  rdf:type  owl:DatatypeProperty .
+
+ast:fornicata  rdfs:subClassOf  _:b113 .
+
+ast:Mollusca  rdfs:subClassOf  ast:Animalia .
+
+ast:fornicata  rdfs:subClassOf  ast:SeaSnail .
+
+ast:Littorinimorpha  rdfs:subClassOf  ast:Gastropoda .
+
+xsd:float  rdf:type  rdfs:Datatype .
+
+_:b114  rdf:type            owl:Restriction ;
+        owl:someValuesFrom  xsd:float ;
+        owl:onProperty      ast:Longitude .
+
+ast:Longitude  rdf:type  owl:DatatypeProperty .
+
+ast:fornicata  rdfs:subClassOf  _:b114 ;
+        rdfs:subClassOf  ast:Crepidula .
+
+ast:Animalia  rdfs:subClassOf  ast:Eukaryota .
+
+ast:Crepidula  rdfs:subClassOf  ast:Calyptraeidae .
+
+ast:ScientificName  rdf:type  owl:DatatypeProperty .
+
+_:b115  rdf:type        owl:Restriction ;
+        owl:hasValue    "Crepidula fornicata" ;
+        owl:onProperty  ast:ScientificName .
+
+ast:fornicata  rdfs:subClassOf  _:b115 .
+
+ast:Gastropoda  rdfs:subClassOf  ast:Mollusca .
+
+ast:Name  rdf:type  owl:DatatypeProperty .
+
+_:b116  rdf:type        owl:Restriction ;
+        owl:hasValue    "Common Atlantic Slippersnail" ;
+        owl:onProperty  ast:Name .
+
+ast:fornicata  rdfs:subClassOf  _:b116 .
+
+ast:Calyptraeidae  rdfs:subClassOf  ast:Littorinimorpha .
+
+xsd:float  rdf:type  rdfs:Datatype .
+
+_:b117  rdf:type            owl:Restriction ;
+        owl:someValuesFrom  xsd:float ;
+        owl:onProperty      ast:Latitude .
+
+ast:Latitude  rdf:type  owl:DatatypeProperty .
+
+ast:nasus  rdfs:subClassOf  _:b117 .
+
+ast:ClimateVulnerability
+        rdf:type  owl:DatatypeProperty .
+
+_:b118  rdf:type        owl:Restriction ;
+        owl:hasValue    "0.62"^^xsd:float ;
+        owl:onProperty  ast:ClimateVulnerability .
+
+ast:nasus  rdfs:subClassOf  _:b118 .
+
+ast:FishingVulnerability
+        rdf:type  owl:DatatypeProperty .
+
+_:b119  rdf:type        owl:Restriction ;
+        owl:hasValue    "0.74"^^xsd:float ;
+        owl:onProperty  ast:FishingVulnerability .
+
+ast:nasus  rdfs:subClassOf  _:b119 .
+
+ast:Chordata  rdfs:subClassOf  ast:Animalia .
+
+ast:maxDepthThrivesOn
+        rdf:type  owl:DatatypeProperty .
+
+_:b120  rdf:type        owl:Restriction ;
+        owl:hasValue    "300"^^xsd:double ;
+        owl:onProperty  ast:maxDepthThrivesOn .
+
+ast:nasus  rdfs:subClassOf  _:b120 .
+
+ast:CommonLength  rdf:type  owl:DatatypeProperty .
+
+_:b121  rdf:type        owl:Restriction ;
+        owl:hasValue    "244"^^xsd:float ;
+        owl:onProperty  ast:CommonLength .
+
+ast:nasus  rdfs:subClassOf  _:b121 .
+
+ast:maxDepth  rdf:type  owl:DatatypeProperty .
+
+_:b122  rdf:type        owl:Restriction ;
+        owl:hasValue    "1360"^^xsd:double ;
+        owl:onProperty  ast:maxDepth .
+
+ast:nasus  rdfs:subClassOf  _:b122 .
+
+ast:minDepth  rdf:type  owl:DatatypeProperty .
+
+_:b123  rdf:type        owl:Restriction ;
+        owl:hasValue    "0"^^xsd:double ;
+        owl:onProperty  ast:minDepth .
+
+ast:nasus  rdfs:subClassOf  _:b123 ;
+        rdfs:subClassOf  ast:Shark .
+
+ast:minDepthThrivesOn
+        rdf:type  owl:DatatypeProperty .
+
+_:b124  rdf:type        owl:Restriction ;
+        owl:hasValue    "0"^^xsd:double ;
+        owl:onProperty  ast:minDepthThrivesOn .
+
+ast:nasus  rdfs:subClassOf  _:b124 .
+
+ast:Lamniformes  rdfs:subClassOf  ast:Elasmobranchii .
+
+xsd:float  rdf:type  rdfs:Datatype .
+
+_:b125  rdf:type            owl:Restriction ;
+        owl:someValuesFrom  xsd:float ;
+        owl:onProperty      ast:Longitude .
+
+ast:Longitude  rdf:type  owl:DatatypeProperty .
+
+ast:nasus  rdfs:subClassOf  _:b125 .
+
+ast:maxTemperature  rdf:type  owl:DatatypeProperty .
+
+_:b126  rdf:type        owl:Restriction ;
+        owl:hasValue    "23"^^xsd:double ;
+        owl:onProperty  ast:maxTemperature .
+
+ast:nasus  rdfs:subClassOf  _:b126 ;
+        rdfs:subClassOf  ast:Lamna .
+
+ast:Animalia  rdfs:subClassOf  ast:Eukaryota .
+
+ast:Lamna  rdfs:subClassOf  ast:Lamnidae .
+
+ast:ScientificName  rdf:type  owl:DatatypeProperty .
+
+_:b127  rdf:type        owl:Restriction ;
+        owl:hasValue    "Lamna nasus" ;
+        owl:onProperty  ast:ScientificName .
+
+ast:nasus  rdfs:subClassOf  _:b127 ;
+        rdfs:subClassOf  _:b128 .
+
+_:b128  rdf:type            owl:Restriction ;
+        owl:someValuesFrom  ast:scombrus ;
+        owl:onProperty      ast:eats .
+
+ast:eats  rdf:type  owl:ObjectProperty .
+
+ast:scombrus  rdf:type  owl:Class .
+
+ast:nasus  rdfs:subClassOf  _:b129 .
+
+_:b129  rdf:type            owl:Restriction ;
+        owl:someValuesFrom  ast:morhua ;
+        owl:onProperty      ast:eats .
+
+ast:eats  rdf:type  owl:ObjectProperty .
+
+ast:morhua  rdf:type  owl:Class .
+
+ast:Elasmobranchii  rdfs:subClassOf  ast:Chordata .
+
+ast:Name  rdf:type  owl:DatatypeProperty .
+
+_:b130  rdf:type        owl:Restriction ;
+        owl:hasValue    "Porbeagle" ;
+        owl:onProperty  ast:Name .
+
+ast:nasus  rdfs:subClassOf  _:b130 .
+
+ast:Lamnidae  rdfs:subClassOf  ast:Lamniformes .
+
+ast:MaxLength  rdf:type  owl:DatatypeProperty .
+
+_:b131  rdf:type        owl:Restriction ;
+        owl:hasValue    "350"^^xsd:float ;
+        owl:onProperty  ast:MaxLength .
+
+ast:nasus  rdfs:subClassOf  _:b131 .
+
+ast:minTemperature  rdf:type  owl:DatatypeProperty .
+
+_:b132  rdf:type        owl:Restriction ;
+        owl:hasValue    "-1"^^xsd:double ;
+        owl:onProperty  ast:minTemperature .
+
+ast:nasus  rdfs:subClassOf  _:b132 .
+
+xsd:float  rdf:type  rdfs:Datatype .
+
+_:b133  rdf:type            owl:Restriction ;
+        owl:someValuesFrom  xsd:float ;
+        owl:onProperty      ast:Latitude .
+
+ast:Latitude  rdf:type  owl:DatatypeProperty .
+
+ast:clavata  rdfs:subClassOf  _:b133 .
+
+ast:ClimateVulnerability
+        rdf:type  owl:DatatypeProperty .
+
+_:b134  rdf:type        owl:Restriction ;
+        owl:hasValue    "0.6"^^xsd:float ;
+        owl:onProperty  ast:ClimateVulnerability .
+
+ast:clavata  rdfs:subClassOf  _:b134 .
+
+ast:FishingVulnerability
+        rdf:type  owl:DatatypeProperty .
+
+_:b135  rdf:type        owl:Restriction ;
+        owl:hasValue    "0.6"^^xsd:float ;
+        owl:onProperty  ast:FishingVulnerability .
+
+ast:clavata  rdfs:subClassOf  _:b135 .
+
+ast:Chordata  rdfs:subClassOf  ast:Animalia .
+
+ast:CommonLength  rdf:type  owl:DatatypeProperty .
+
+_:b136  rdf:type        owl:Restriction ;
+        owl:hasValue    "85"^^xsd:float ;
+        owl:onProperty  ast:CommonLength .
+
+ast:clavata  rdfs:subClassOf  _:b136 .
+
+ast:maxDepth  rdf:type  owl:DatatypeProperty .
+
+_:b137  rdf:type        owl:Restriction ;
+        owl:hasValue    "1020"^^xsd:double ;
+        owl:onProperty  ast:maxDepth .
+
+ast:clavata  rdfs:subClassOf  _:b137 .
+
+ast:minDepth  rdf:type  owl:DatatypeProperty .
+
+_:b138  rdf:type        owl:Restriction ;
+        owl:hasValue    "5"^^xsd:double ;
+        owl:onProperty  ast:minDepth .
+
+ast:clavata  rdfs:subClassOf  _:b138 ;
+        rdfs:subClassOf  ast:Ray .
+
+ast:Rajiformes  rdfs:subClassOf  ast:Elasmobranchii .
 
 xsd:float  rdf:type  rdfs:Datatype .
 
@@ -1583,88 +1586,68 @@ _:b139  rdf:type            owl:Restriction ;
 
 ast:Longitude  rdf:type  owl:DatatypeProperty .
 
-ast:rubens  rdfs:subClassOf  _:b139 .
-
-ast:Forcipulatida  rdfs:subClassOf  ast:Asteroidea .
-
-ast:rubens  rdfs:subClassOf  ast:Asterias .
+ast:clavata  rdfs:subClassOf  _:b139 ;
+        rdfs:subClassOf  ast:Raja .
 
 ast:Animalia  rdfs:subClassOf  ast:Eukaryota .
 
-ast:Asterias  rdfs:subClassOf  ast:Asteriidae .
+ast:Raja  rdfs:subClassOf  ast:Rajidae .
 
 ast:ScientificName  rdf:type  owl:DatatypeProperty .
 
 _:b140  rdf:type        owl:Restriction ;
-        owl:hasValue    "Asterias rubens" ;
+        owl:hasValue    "Raja clavata" ;
         owl:onProperty  ast:ScientificName .
 
-ast:rubens  rdfs:subClassOf  _:b140 .
+ast:clavata  rdfs:subClassOf  _:b140 ;
+        rdfs:subClassOf  _:b141 .
 
-ast:Name  rdf:type  owl:DatatypeProperty .
+_:b141  rdf:type            owl:Restriction ;
+        owl:someValuesFrom  ast:Crustacean ;
+        owl:onProperty      ast:eats .
 
-_:b141  rdf:type        owl:Restriction ;
-        owl:hasValue    "Common Starfish" ;
-        owl:onProperty  ast:Name .
+ast:eats  rdf:type  owl:ObjectProperty .
 
-ast:rubens  rdfs:subClassOf  _:b141 .
+ast:Crustacean  rdf:type  owl:Class .
 
-ast:Asteroidea  rdfs:subClassOf  ast:Echinodermata .
-
-ast:Asteriidae  rdfs:subClassOf  ast:Forcipulatida .
-
-xsd:float  rdf:type  rdfs:Datatype .
+ast:clavata  rdfs:subClassOf  _:b142 .
 
 _:b142  rdf:type            owl:Restriction ;
-        owl:someValuesFrom  xsd:float ;
-        owl:onProperty      ast:Latitude .
+        owl:someValuesFrom  ast:Fish ;
+        owl:onProperty      ast:eats .
 
-ast:Latitude  rdf:type  owl:DatatypeProperty .
+ast:eats  rdf:type  owl:ObjectProperty .
 
-ast:fornicata  rdfs:subClassOf  _:b142 ;
-        rdfs:subClassOf  ast:Species .
+ast:Fish  rdf:type  owl:Class .
 
-ast:Mollusca  rdfs:subClassOf  ast:Animalia .
+ast:NorwegianCategory
+        rdf:type  owl:DatatypeProperty .
 
-ast:fornicata  rdfs:subClassOf  ast:SeaSnail .
+_:b143  rdf:type        owl:Restriction ;
+        owl:hasValue    "LC-Viable" ;
+        owl:onProperty  ast:NorwegianCategory .
 
-xsd:float  rdf:type  rdfs:Datatype .
+ast:clavata  rdfs:subClassOf  _:b143 .
 
-_:b143  rdf:type            owl:Restriction ;
-        owl:someValuesFrom  xsd:float ;
-        owl:onProperty      ast:Longitude .
-
-ast:Longitude  rdf:type  owl:DatatypeProperty .
-
-ast:fornicata  rdfs:subClassOf  _:b143 .
-
-ast:Littorinimorpha  rdfs:subClassOf  ast:Gastropoda .
-
-ast:fornicata  rdfs:subClassOf  ast:Crepidula .
-
-ast:Animalia  rdfs:subClassOf  ast:Eukaryota .
-
-ast:Crepidula  rdfs:subClassOf  ast:Calyptraeidae .
-
-ast:ScientificName  rdf:type  owl:DatatypeProperty .
-
-_:b144  rdf:type        owl:Restriction ;
-        owl:hasValue    "Crepidula fornicata" ;
-        owl:onProperty  ast:ScientificName .
-
-ast:fornicata  rdfs:subClassOf  _:b144 .
+ast:Elasmobranchii  rdfs:subClassOf  ast:Chordata .
 
 ast:Name  rdf:type  owl:DatatypeProperty .
 
-_:b145  rdf:type        owl:Restriction ;
-        owl:hasValue    "Common Atlantic Slippersnail" ;
+_:b144  rdf:type        owl:Restriction ;
+        owl:hasValue    "Thornback Ray" ;
         owl:onProperty  ast:Name .
 
-ast:fornicata  rdfs:subClassOf  _:b145 .
+ast:clavata  rdfs:subClassOf  _:b144 .
 
-ast:Gastropoda  rdfs:subClassOf  ast:Mollusca .
+ast:Rajidae  rdfs:subClassOf  ast:Rajiformes .
 
-ast:Calyptraeidae  rdfs:subClassOf  ast:Littorinimorpha .
+ast:MaxLength  rdf:type  owl:DatatypeProperty .
+
+_:b145  rdf:type        owl:Restriction ;
+        owl:hasValue    "105"^^xsd:float ;
+        owl:onProperty  ast:MaxLength .
+
+ast:clavata  rdfs:subClassOf  _:b145 .
 
 xsd:float  rdf:type  rdfs:Datatype .
 
@@ -1674,379 +1657,24 @@ _:b146  rdf:type            owl:Restriction ;
 
 ast:Latitude  rdf:type  owl:DatatypeProperty .
 
-ast:nasus  rdfs:subClassOf  _:b146 .
-
-ast:ClimateVulnerability
-        rdf:type  owl:DatatypeProperty .
-
-_:b147  rdf:type        owl:Restriction ;
-        owl:hasValue    "0.62"^^xsd:float ;
-        owl:onProperty  ast:ClimateVulnerability .
-
-ast:nasus  rdfs:subClassOf  _:b147 .
-
-ast:FishingVulnerability
-        rdf:type  owl:DatatypeProperty .
-
-_:b148  rdf:type        owl:Restriction ;
-        owl:hasValue    "0.74"^^xsd:float ;
-        owl:onProperty  ast:FishingVulnerability .
-
-ast:nasus  rdfs:subClassOf  _:b148 ;
-        rdfs:subClassOf  ast:Species .
-
-ast:Chordata  rdfs:subClassOf  ast:Animalia .
-
-ast:scombrus  rdfs:subClassOf  _:b149 .
-
-_:b149  rdf:type            owl:Restriction ;
-        owl:someValuesFrom  ast:nasus ;
-        owl:onProperty      ast:eatenBy .
-
-ast:eatenBy  rdf:type  owl:ObjectProperty .
-
-ast:nasus  rdf:type  owl:Class .
-
-ast:morhua  rdfs:subClassOf  _:b150 .
-
-_:b150  rdf:type            owl:Restriction ;
-        owl:someValuesFrom  ast:nasus ;
-        owl:onProperty      ast:eatenBy .
-
-ast:eatenBy  rdf:type  owl:ObjectProperty .
-
-ast:nasus  rdf:type  owl:Class .
-
-ast:maxDepthThrivesOn
-        rdf:type  owl:DatatypeProperty .
-
-_:b151  rdf:type        owl:Restriction ;
-        owl:hasValue    "300"^^xsd:double ;
-        owl:onProperty  ast:maxDepthThrivesOn .
-
-ast:nasus  rdfs:subClassOf  _:b151 .
-
-ast:CommonLength  rdf:type  owl:DatatypeProperty .
-
-_:b152  rdf:type        owl:Restriction ;
-        owl:hasValue    "244"^^xsd:float ;
-        owl:onProperty  ast:CommonLength .
-
-ast:nasus  rdfs:subClassOf  _:b152 .
-
-ast:maxDepth  rdf:type  owl:DatatypeProperty .
-
-_:b153  rdf:type        owl:Restriction ;
-        owl:hasValue    "1360"^^xsd:double ;
-        owl:onProperty  ast:maxDepth .
-
-ast:nasus  rdfs:subClassOf  _:b153 .
-
-ast:minDepth  rdf:type  owl:DatatypeProperty .
-
-_:b154  rdf:type        owl:Restriction ;
-        owl:hasValue    "0"^^xsd:double ;
-        owl:onProperty  ast:minDepth .
-
-ast:nasus  rdfs:subClassOf  _:b154 ;
-        rdfs:subClassOf  ast:Shark .
-
-ast:minDepthThrivesOn
-        rdf:type  owl:DatatypeProperty .
-
-_:b155  rdf:type        owl:Restriction ;
-        owl:hasValue    "0"^^xsd:double ;
-        owl:onProperty  ast:minDepthThrivesOn .
-
-ast:nasus  rdfs:subClassOf  _:b155 .
-
-xsd:float  rdf:type  rdfs:Datatype .
-
-_:b156  rdf:type            owl:Restriction ;
-        owl:someValuesFrom  xsd:float ;
-        owl:onProperty      ast:Longitude .
-
-ast:Longitude  rdf:type  owl:DatatypeProperty .
-
-ast:nasus  rdfs:subClassOf  _:b156 .
-
-ast:Lamniformes  rdfs:subClassOf  ast:Elasmobranchii .
-
-ast:maxTemperature  rdf:type  owl:DatatypeProperty .
-
-_:b157  rdf:type        owl:Restriction ;
-        owl:hasValue    "23"^^xsd:double ;
-        owl:onProperty  ast:maxTemperature .
-
-ast:nasus  rdfs:subClassOf  _:b157 ;
-        rdfs:subClassOf  ast:Lamna .
-
-ast:Animalia  rdfs:subClassOf  ast:Eukaryota .
-
-ast:Lamna  rdfs:subClassOf  ast:Lamnidae .
-
-ast:ScientificName  rdf:type  owl:DatatypeProperty .
-
-_:b158  rdf:type        owl:Restriction ;
-        owl:hasValue    "Lamna nasus" ;
-        owl:onProperty  ast:ScientificName .
-
-ast:nasus  rdfs:subClassOf  _:b158 ;
-        rdfs:subClassOf  _:b159 .
-
-_:b159  rdf:type            owl:Restriction ;
-        owl:someValuesFrom  ast:scombrus ;
-        owl:onProperty      ast:eats .
-
-ast:eats  rdf:type  owl:ObjectProperty .
-
-ast:scombrus  rdf:type  owl:Class .
-
-ast:nasus  rdfs:subClassOf  _:b160 .
-
-_:b160  rdf:type            owl:Restriction ;
-        owl:someValuesFrom  ast:morhua ;
-        owl:onProperty      ast:eats .
-
-ast:eats  rdf:type  owl:ObjectProperty .
-
-ast:morhua  rdf:type  owl:Class .
-
-ast:Name  rdf:type  owl:DatatypeProperty .
-
-_:b161  rdf:type        owl:Restriction ;
-        owl:hasValue    "Porbeagle" ;
-        owl:onProperty  ast:Name .
-
-ast:nasus  rdfs:subClassOf  _:b161 .
-
-ast:Elasmobranchii  rdfs:subClassOf  ast:Chordata .
-
-ast:Lamnidae  rdfs:subClassOf  ast:Lamniformes .
-
-ast:MaxLength  rdf:type  owl:DatatypeProperty .
-
-_:b162  rdf:type        owl:Restriction ;
-        owl:hasValue    "350"^^xsd:float ;
-        owl:onProperty  ast:MaxLength .
-
-ast:nasus  rdfs:subClassOf  _:b162 .
-
-ast:minTemperature  rdf:type  owl:DatatypeProperty .
-
-_:b163  rdf:type        owl:Restriction ;
-        owl:hasValue    "-1"^^xsd:double ;
-        owl:onProperty  ast:minTemperature .
-
-ast:nasus  rdfs:subClassOf  _:b163 .
-
-xsd:float  rdf:type  rdfs:Datatype .
-
-_:b164  rdf:type            owl:Restriction ;
-        owl:someValuesFrom  xsd:float ;
-        owl:onProperty      ast:Latitude .
-
-ast:Latitude  rdf:type  owl:DatatypeProperty .
-
-ast:clavata  rdfs:subClassOf  _:b164 .
-
-ast:ClimateVulnerability
-        rdf:type  owl:DatatypeProperty .
-
-_:b165  rdf:type        owl:Restriction ;
-        owl:hasValue    "0.6"^^xsd:float ;
-        owl:onProperty  ast:ClimateVulnerability .
-
-ast:clavata  rdfs:subClassOf  _:b165 .
-
-ast:FishingVulnerability
-        rdf:type  owl:DatatypeProperty .
-
-_:b166  rdf:type        owl:Restriction ;
-        owl:hasValue    "0.6"^^xsd:float ;
-        owl:onProperty  ast:FishingVulnerability .
-
-ast:clavata  rdfs:subClassOf  _:b166 ;
-        rdfs:subClassOf  ast:Species .
-
-ast:Chordata  rdfs:subClassOf  ast:Animalia .
-
-ast:Crustacean  rdfs:subClassOf  _:b167 .
-
-_:b167  rdf:type            owl:Restriction ;
-        owl:someValuesFrom  ast:clavata ;
-        owl:onProperty      ast:eatenBy .
-
-ast:eatenBy  rdf:type  owl:ObjectProperty .
-
-ast:clavata  rdf:type  owl:Class .
-
-ast:Fish  rdfs:subClassOf  _:b168 .
-
-_:b168  rdf:type            owl:Restriction ;
-        owl:someValuesFrom  ast:clavata ;
-        owl:onProperty      ast:eatenBy .
-
-ast:eatenBy  rdf:type  owl:ObjectProperty .
-
-ast:clavata  rdf:type  owl:Class .
-
-ast:CommonLength  rdf:type  owl:DatatypeProperty .
-
-_:b169  rdf:type        owl:Restriction ;
-        owl:hasValue    "85"^^xsd:float ;
-        owl:onProperty  ast:CommonLength .
-
-ast:clavata  rdfs:subClassOf  _:b169 .
-
-ast:maxDepth  rdf:type  owl:DatatypeProperty .
-
-_:b170  rdf:type        owl:Restriction ;
-        owl:hasValue    "1020"^^xsd:double ;
-        owl:onProperty  ast:maxDepth .
-
-ast:clavata  rdfs:subClassOf  _:b170 .
-
-ast:minDepth  rdf:type  owl:DatatypeProperty .
-
-_:b171  rdf:type        owl:Restriction ;
-        owl:hasValue    "5"^^xsd:double ;
-        owl:onProperty  ast:minDepth .
-
-ast:clavata  rdfs:subClassOf  _:b171 ;
-        rdfs:subClassOf  ast:Ray .
-
-xsd:float  rdf:type  rdfs:Datatype .
-
-_:b172  rdf:type            owl:Restriction ;
-        owl:someValuesFrom  xsd:float ;
-        owl:onProperty      ast:Longitude .
-
-ast:Longitude  rdf:type  owl:DatatypeProperty .
-
-ast:clavata  rdfs:subClassOf  _:b172 .
-
-ast:Rajiformes  rdfs:subClassOf  ast:Elasmobranchii .
-
-ast:clavata  rdfs:subClassOf  ast:Raja .
-
-ast:Animalia  rdfs:subClassOf  ast:Eukaryota .
-
-ast:Raja  rdfs:subClassOf  ast:Rajidae .
-
-ast:ScientificName  rdf:type  owl:DatatypeProperty .
-
-_:b173  rdf:type        owl:Restriction ;
-        owl:hasValue    "Raja clavata" ;
-        owl:onProperty  ast:ScientificName .
-
-ast:clavata  rdfs:subClassOf  _:b173 ;
-        rdfs:subClassOf  _:b174 .
-
-_:b174  rdf:type            owl:Restriction ;
-        owl:someValuesFrom  ast:Crustacean ;
-        owl:onProperty      ast:eats .
-
-ast:eats  rdf:type  owl:ObjectProperty .
-
-ast:Crustacean  rdf:type  owl:Class .
-
-ast:clavata  rdfs:subClassOf  _:b175 .
-
-_:b175  rdf:type            owl:Restriction ;
-        owl:someValuesFrom  ast:Fish ;
-        owl:onProperty      ast:eats .
-
-ast:eats  rdf:type  owl:ObjectProperty .
-
-ast:Fish  rdf:type  owl:Class .
-
-ast:NorwegianCategory
-        rdf:type  owl:DatatypeProperty .
-
-_:b176  rdf:type        owl:Restriction ;
-        owl:hasValue    "LC-Viable" ;
-        owl:onProperty  ast:NorwegianCategory .
-
-ast:clavata  rdfs:subClassOf  _:b176 .
-
-ast:Name  rdf:type  owl:DatatypeProperty .
-
-_:b177  rdf:type        owl:Restriction ;
-        owl:hasValue    "Thornback Ray" ;
-        owl:onProperty  ast:Name .
-
-ast:clavata  rdfs:subClassOf  _:b177 .
-
-ast:Elasmobranchii  rdfs:subClassOf  ast:Chordata .
-
-ast:Rajidae  rdfs:subClassOf  ast:Rajiformes .
-
-ast:MaxLength  rdf:type  owl:DatatypeProperty .
-
-_:b178  rdf:type        owl:Restriction ;
-        owl:hasValue    "105"^^xsd:float ;
-        owl:onProperty  ast:MaxLength .
-
-ast:clavata  rdfs:subClassOf  _:b178 .
-
-xsd:float  rdf:type  rdfs:Datatype .
-
-_:b179  rdf:type            owl:Restriction ;
-        owl:someValuesFrom  xsd:float ;
-        owl:onProperty      ast:Latitude .
-
-ast:Latitude  rdf:type  owl:DatatypeProperty .
-
-ast:macrosoma  rdfs:subClassOf  _:b179 ;
-        rdfs:subClassOf  ast:Species .
+ast:macrosoma  rdfs:subClassOf  _:b146 .
 
 ast:Mollusca  rdfs:subClassOf  ast:Animalia .
 
-ast:Fish  rdfs:subClassOf  _:b180 .
+ast:macrosoma  rdfs:subClassOf  ast:Squid .
 
-_:b180  rdf:type            owl:Restriction ;
-        owl:someValuesFrom  ast:macrosoma ;
-        owl:onProperty      ast:eatenBy .
-
-ast:eatenBy  rdf:type  owl:ObjectProperty .
-
-ast:macrosoma  rdf:type  owl:Class .
-
-ast:Mollusca  rdfs:subClassOf  _:b181 .
-
-_:b181  rdf:type            owl:Restriction ;
-        owl:someValuesFrom  ast:macrosoma ;
-        owl:onProperty      ast:eatenBy .
-
-ast:eatenBy  rdf:type  owl:ObjectProperty .
-
-ast:macrosoma  rdf:type  owl:Class .
-
-ast:Crustacean  rdfs:subClassOf  _:b182 .
-
-_:b182  rdf:type            owl:Restriction ;
-        owl:someValuesFrom  ast:macrosoma ;
-        owl:onProperty      ast:eatenBy .
-
-ast:eatenBy  rdf:type  owl:ObjectProperty .
-
-ast:macrosoma  rdf:type  owl:Class ;
-        rdfs:subClassOf  ast:Squid .
+ast:Sepiolida  rdfs:subClassOf  ast:Cephalopoda .
 
 xsd:float  rdf:type  rdfs:Datatype .
 
-_:b183  rdf:type            owl:Restriction ;
+_:b147  rdf:type            owl:Restriction ;
         owl:someValuesFrom  xsd:float ;
         owl:onProperty      ast:Longitude .
 
 ast:Longitude  rdf:type  owl:DatatypeProperty .
 
-ast:macrosoma  rdfs:subClassOf  _:b183 .
-
-ast:Sepiolida  rdfs:subClassOf  ast:Cephalopoda .
-
-ast:macrosoma  rdfs:subClassOf  ast:Rossia .
+ast:macrosoma  rdfs:subClassOf  _:b147 ;
+        rdfs:subClassOf  ast:Rossia .
 
 ast:Animalia  rdfs:subClassOf  ast:Eukaryota .
 
@@ -2054,14 +1682,14 @@ ast:Rossia  rdfs:subClassOf  ast:Sepiolidae .
 
 ast:ScientificName  rdf:type  owl:DatatypeProperty .
 
-_:b184  rdf:type        owl:Restriction ;
+_:b148  rdf:type        owl:Restriction ;
         owl:hasValue    "Rossia macrosoma" ;
         owl:onProperty  ast:ScientificName .
 
-ast:macrosoma  rdfs:subClassOf  _:b184 ;
-        rdfs:subClassOf  _:b185 .
+ast:macrosoma  rdfs:subClassOf  _:b148 ;
+        rdfs:subClassOf  _:b149 .
 
-_:b185  rdf:type            owl:Restriction ;
+_:b149  rdf:type            owl:Restriction ;
         owl:someValuesFrom  ast:Fish ;
         owl:onProperty      ast:eats .
 
@@ -2069,9 +1697,9 @@ ast:eats  rdf:type  owl:ObjectProperty .
 
 ast:Fish  rdf:type  owl:Class .
 
-ast:macrosoma  rdfs:subClassOf  _:b186 .
+ast:macrosoma  rdfs:subClassOf  _:b150 .
 
-_:b186  rdf:type            owl:Restriction ;
+_:b150  rdf:type            owl:Restriction ;
         owl:someValuesFrom  ast:Mollusca ;
         owl:onProperty      ast:eats .
 
@@ -2079,9 +1707,9 @@ ast:eats  rdf:type  owl:ObjectProperty .
 
 ast:Mollusca  rdf:type  owl:Class .
 
-ast:macrosoma  rdfs:subClassOf  _:b187 .
+ast:macrosoma  rdfs:subClassOf  _:b151 .
 
-_:b187  rdf:type            owl:Restriction ;
+_:b151  rdf:type            owl:Restriction ;
         owl:someValuesFrom  ast:Crustacean ;
         owl:onProperty      ast:eats .
 
@@ -2092,61 +1720,50 @@ ast:Crustacean  rdf:type  owl:Class .
 ast:NorwegianCategory
         rdf:type  owl:DatatypeProperty .
 
-_:b188  rdf:type        owl:Restriction ;
+_:b152  rdf:type        owl:Restriction ;
         owl:hasValue    "LC-Viable" ;
         owl:onProperty  ast:NorwegianCategory .
 
-ast:macrosoma  rdfs:subClassOf  _:b188 .
+ast:macrosoma  rdfs:subClassOf  _:b152 .
+
+ast:Cephalopoda  rdfs:subClassOf  ast:Mollusca .
 
 ast:Name  rdf:type  owl:DatatypeProperty .
 
-_:b189  rdf:type        owl:Restriction ;
+_:b153  rdf:type        owl:Restriction ;
         owl:hasValue    "Stout Bobtail" ;
         owl:onProperty  ast:Name .
 
-ast:macrosoma  rdfs:subClassOf  _:b189 .
-
-ast:Cephalopoda  rdfs:subClassOf  ast:Mollusca .
+ast:macrosoma  rdfs:subClassOf  _:b153 .
 
 ast:Sepiolidae  rdfs:subClassOf  ast:Sepiolida .
 
 xsd:float  rdf:type  rdfs:Datatype .
 
-_:b190  rdf:type            owl:Restriction ;
+_:b154  rdf:type            owl:Restriction ;
         owl:someValuesFrom  xsd:float ;
         owl:onProperty      ast:Latitude .
 
 ast:Latitude  rdf:type  owl:DatatypeProperty .
 
-ast:capillata  rdfs:subClassOf  _:b190 ;
-        rdfs:subClassOf  ast:Species .
+ast:capillata  rdfs:subClassOf  _:b154 .
 
 ast:Cnidaria  rdfs:subClassOf  ast:Animalia .
 
-ast:Plankton  rdfs:subClassOf  _:b191 .
+ast:capillata  rdfs:subClassOf  ast:Jellyfish .
 
-_:b191  rdf:type            owl:Restriction ;
-        owl:someValuesFrom  ast:capillata ;
-        owl:onProperty      ast:eatenBy .
-
-ast:eatenBy  rdf:type  owl:ObjectProperty .
-
-ast:capillata  rdf:type  owl:Class ;
-        rdfs:subClassOf  ast:Jellyfish .
+ast:Semaeostomeae  rdfs:subClassOf  ast:Scyphozoa .
 
 xsd:float  rdf:type  rdfs:Datatype .
 
-_:b192  rdf:type            owl:Restriction ;
+_:b155  rdf:type            owl:Restriction ;
         owl:someValuesFrom  xsd:float ;
         owl:onProperty      ast:Longitude .
 
 ast:Longitude  rdf:type  owl:DatatypeProperty .
 
-ast:capillata  rdfs:subClassOf  _:b192 .
-
-ast:Semaeostomeae  rdfs:subClassOf  ast:Scyphozoa .
-
-ast:capillata  rdfs:subClassOf  ast:Cyanea .
+ast:capillata  rdfs:subClassOf  _:b155 ;
+        rdfs:subClassOf  ast:Cyanea .
 
 ast:Animalia  rdfs:subClassOf  ast:Eukaryota .
 
@@ -2154,14 +1771,14 @@ ast:Cyanea  rdfs:subClassOf  ast:Cyaneidae .
 
 ast:ScientificName  rdf:type  owl:DatatypeProperty .
 
-_:b193  rdf:type        owl:Restriction ;
+_:b156  rdf:type        owl:Restriction ;
         owl:hasValue    "Cyanea capillata" ;
         owl:onProperty  ast:ScientificName .
 
-ast:capillata  rdfs:subClassOf  _:b193 ;
-        rdfs:subClassOf  _:b194 .
+ast:capillata  rdfs:subClassOf  _:b156 ;
+        rdfs:subClassOf  _:b157 .
 
-_:b194  rdf:type            owl:Restriction ;
+_:b157  rdf:type            owl:Restriction ;
         owl:someValuesFrom  ast:Plankton ;
         owl:onProperty      ast:eats .
 
@@ -2172,53 +1789,51 @@ ast:Plankton  rdf:type  owl:Class .
 ast:NorwegianCategory
         rdf:type  owl:DatatypeProperty .
 
-_:b195  rdf:type        owl:Restriction ;
+_:b158  rdf:type        owl:Restriction ;
         owl:hasValue    "LC-Viable" ;
         owl:onProperty  ast:NorwegianCategory .
 
-ast:capillata  rdfs:subClassOf  _:b195 .
+ast:capillata  rdfs:subClassOf  _:b158 .
+
+ast:Scyphozoa  rdfs:subClassOf  ast:Cnidaria .
 
 ast:Name  rdf:type  owl:DatatypeProperty .
 
-_:b196  rdf:type        owl:Restriction ;
+_:b159  rdf:type        owl:Restriction ;
         owl:hasValue    "Arctic Red Jellyfish" ;
         owl:onProperty  ast:Name .
 
-ast:capillata  rdfs:subClassOf  _:b196 .
-
-ast:Scyphozoa  rdfs:subClassOf  ast:Cnidaria .
+ast:capillata  rdfs:subClassOf  _:b159 .
 
 ast:Cyaneidae  rdfs:subClassOf  ast:Semaeostomeae .
 
 xsd:float  rdf:type  rdfs:Datatype .
 
-_:b197  rdf:type            owl:Restriction ;
+_:b160  rdf:type            owl:Restriction ;
         owl:someValuesFrom  xsd:float ;
         owl:onProperty      ast:Latitude .
 
 ast:Latitude  rdf:type  owl:DatatypeProperty .
 
-ast:horridus  rdfs:subClassOf  _:b197 ;
-        rdfs:subClassOf  ast:Species .
+ast:horridus  rdfs:subClassOf  _:b160 .
 
 ast:Miozoa  rdfs:subClassOf  ast:Chromista .
 
 ast:horridus  rdfs:subClassOf  ast:Algae ;
         rdfs:subClassOf  ast:Phytoplankton .
 
+ast:Gonyaulacales  rdfs:subClassOf  ast:Dinophyceae .
+
 xsd:float  rdf:type  rdfs:Datatype .
 
-_:b198  rdf:type            owl:Restriction ;
+_:b161  rdf:type            owl:Restriction ;
         owl:someValuesFrom  xsd:float ;
         owl:onProperty      ast:Longitude .
 
 ast:Longitude  rdf:type  owl:DatatypeProperty .
 
-ast:horridus  rdfs:subClassOf  _:b198 .
-
-ast:Gonyaulacales  rdfs:subClassOf  ast:Dinophyceae .
-
-ast:horridus  rdfs:subClassOf  ast:Tripos .
+ast:horridus  rdfs:subClassOf  _:b161 ;
+        rdfs:subClassOf  ast:Tripos .
 
 ast:Chromista  rdfs:subClassOf  ast:Eukaryota .
 
@@ -2226,20 +1841,30 @@ ast:Tripos  rdfs:subClassOf  ast:Ceratiaceae .
 
 ast:ScientificName  rdf:type  owl:DatatypeProperty .
 
-_:b199  rdf:type        owl:Restriction ;
+_:b162  rdf:type        owl:Restriction ;
         owl:hasValue    "Tripos horridus" ;
         owl:onProperty  ast:ScientificName .
 
-ast:horridus  rdfs:subClassOf  _:b199 .
+ast:horridus  rdfs:subClassOf  _:b162 .
 
 ast:Dinophyceae  rdfs:subClassOf  ast:Miozoa .
 
 ast:Ceratiaceae  rdfs:subClassOf  ast:Gonyaulacales .
 
 ast:Zooplankton  rdfs:subClassOf  ast:Plankton ;
-        rdfs:subClassOf  _:b200 .
+        rdfs:subClassOf  _:b163 .
 
-_:b200  rdf:type            owl:Restriction ;
+_:b163  rdf:type            owl:Restriction ;
+        owl:someValuesFrom  ast:Salinity ;
+        owl:onProperty      ast:affectedBy .
+
+ast:affectedBy  rdf:type  owl:ObjectProperty .
+
+ast:Salinity  rdf:type  owl:Class .
+
+ast:Zooplankton  rdfs:subClassOf  _:b164 .
+
+_:b164  rdf:type            owl:Restriction ;
         owl:someValuesFrom  ast:TemperatureMeasurement ;
         owl:onProperty      ast:affectedBy .
 
@@ -2248,19 +1873,9 @@ ast:affectedBy  rdf:type  owl:ObjectProperty .
 ast:TemperatureMeasurement
         rdf:type  owl:Class .
 
-ast:Zooplankton  rdfs:subClassOf  _:b201 .
+ast:Phytoplankton  rdfs:subClassOf  _:b165 .
 
-_:b201  rdf:type            owl:Restriction ;
-        owl:someValuesFrom  ast:Salinity ;
-        owl:onProperty      ast:affectedBy .
-
-ast:affectedBy  rdf:type  owl:ObjectProperty .
-
-ast:Salinity  rdf:type  owl:Class .
-
-ast:Phytoplankton  rdfs:subClassOf  _:b202 .
-
-_:b202  rdf:type            owl:Restriction ;
+_:b165  rdf:type            owl:Restriction ;
         owl:someValuesFrom  ast:Sun ;
         owl:onProperty      ast:hasEnergySource .
 
@@ -2269,9 +1884,9 @@ ast:hasEnergySource  rdf:type  owl:ObjectProperty .
 ast:Sun  rdf:type  owl:Class .
 
 ast:Phytoplankton  rdfs:subClassOf  ast:Plankton ;
-        rdfs:subClassOf  _:b203 .
+        rdfs:subClassOf  _:b166 .
 
-_:b203  rdf:type            owl:Restriction ;
+_:b166  rdf:type            owl:Restriction ;
         owl:someValuesFrom  ast:Chlorophyll ;
         owl:onProperty      ast:affectedBy .
 
@@ -2284,35 +1899,35 @@ ast:Picoplankton  rdfs:subClassOf  ast:Phytoplankton ;
 
 ast:MinLength  rdf:type  owl:DatatypeProperty .
 
-_:b204  rdf:type        owl:Restriction ;
+_:b167  rdf:type        owl:Restriction ;
         owl:hasValue    "0"^^xsd:float ;
         owl:onProperty  ast:MinLength .
 
-ast:Picoplankton  rdfs:subClassOf  _:b204 .
+ast:Picoplankton  rdfs:subClassOf  _:b167 .
 
 ast:MaxLength  rdf:type  owl:DatatypeProperty .
 
-_:b205  rdf:type        owl:Restriction ;
+_:b168  rdf:type        owl:Restriction ;
         owl:hasValue    "0.00002"^^xsd:float ;
         owl:onProperty  ast:MaxLength .
 
-ast:Picoplankton  rdfs:subClassOf  _:b205 .
+ast:Picoplankton  rdfs:subClassOf  _:b168 .
 
 ast:MaxLength  rdf:type  owl:DatatypeProperty .
 
-_:b206  rdf:type        owl:Restriction ;
+_:b169  rdf:type        owl:Restriction ;
         owl:hasValue    "0.0002"^^xsd:float ;
         owl:onProperty  ast:MaxLength .
 
-ast:Nanoplankton  rdfs:subClassOf  _:b206 .
+ast:Nanoplankton  rdfs:subClassOf  _:b169 .
 
 ast:MinLength  rdf:type  owl:DatatypeProperty .
 
-_:b207  rdf:type        owl:Restriction ;
+_:b170  rdf:type        owl:Restriction ;
         owl:hasValue    "0.00002"^^xsd:float ;
         owl:onProperty  ast:MinLength .
 
-ast:Nanoplankton  rdfs:subClassOf  _:b207 ;
+ast:Nanoplankton  rdfs:subClassOf  _:b170 ;
         rdfs:subClassOf  ast:Zooplankton ;
         rdfs:subClassOf  ast:Phytoplankton .
 
@@ -2320,55 +1935,55 @@ ast:Mikroplankton  rdfs:subClassOf  ast:Phytoplankton .
 
 ast:MaxLength  rdf:type  owl:DatatypeProperty .
 
-_:b208  rdf:type        owl:Restriction ;
+_:b171  rdf:type        owl:Restriction ;
         owl:hasValue    "0.002"^^xsd:float ;
         owl:onProperty  ast:MaxLength .
 
-ast:Mikroplankton  rdfs:subClassOf  _:b208 ;
+ast:Mikroplankton  rdfs:subClassOf  _:b171 ;
         rdfs:subClassOf  ast:Zooplankton .
 
 ast:MinLength  rdf:type  owl:DatatypeProperty .
 
-_:b209  rdf:type        owl:Restriction ;
+_:b172  rdf:type        owl:Restriction ;
         owl:hasValue    "0.0002"^^xsd:float ;
         owl:onProperty  ast:MinLength .
 
-ast:Mikroplankton  rdfs:subClassOf  _:b209 .
+ast:Mikroplankton  rdfs:subClassOf  _:b172 .
 
 ast:Megaplankton  rdfs:subClassOf  ast:Phytoplankton ;
         rdfs:subClassOf  ast:Zooplankton .
 
 ast:MinLength  rdf:type  owl:DatatypeProperty .
 
-_:b210  rdf:type        owl:Restriction ;
+_:b173  rdf:type        owl:Restriction ;
         owl:hasValue    "0.002"^^xsd:float ;
         owl:onProperty  ast:MinLength .
 
-ast:Megaplankton  rdfs:subClassOf  _:b210 .
+ast:Megaplankton  rdfs:subClassOf  _:b173 .
 
 ex:Low  rdfs:subClassOf  ast:Tide .
 
 xsd:dateTime  rdf:type  rdfs:Datatype .
 
-_:b211  rdf:type            owl:Restriction ;
+_:b174  rdf:type            owl:Restriction ;
         owl:someValuesFrom  xsd:dateTime ;
         owl:onProperty      ast:DateTime .
 
 ast:DateTime  rdf:type  owl:DatatypeProperty .
 
-ex:Low  rdfs:subClassOf  _:b211 .
+ex:Low  rdfs:subClassOf  _:b174 .
 
 ex:High  rdfs:subClassOf  ast:Tide .
 
 xsd:dateTime  rdf:type  rdfs:Datatype .
 
-_:b212  rdf:type            owl:Restriction ;
+_:b175  rdf:type            owl:Restriction ;
         owl:someValuesFrom  xsd:dateTime ;
         owl:onProperty      ast:DateTime .
 
 ast:DateTime  rdf:type  owl:DatatypeProperty .
 
-ex:High  rdfs:subClassOf  _:b212 .
+ex:High  rdfs:subClassOf  _:b175 .
 
 ast:Depth  rdf:type  owl:DatatypeProperty .
 
@@ -2518,7 +2133,7 @@ ex:ShipNoise  rdfs:subPropertyOf  ast:Sound ;
 
 ast:Sound  rdfs:range  xsd:float .
 
-_:b213  rdfs:subClassOf     ast:Predator ;
+_:b176  rdfs:subClassOf     ast:Predator ;
         rdf:type            owl:Restriction ;
         owl:someValuesFrom  ast:Prey ;
         owl:onProperty      ast:preyOn .
@@ -2527,7 +2142,7 @@ ast:preyOn  rdf:type  owl:ObjectProperty .
 
 ast:Prey  rdf:type  owl:Class .
 
-_:b214  rdfs:subClassOf     ast:Predator ;
+_:b177  rdfs:subClassOf     ast:Predator ;
         rdf:type            owl:Restriction ;
         owl:someValuesFrom  ast:Prey ;
         owl:onProperty      ast:eats .
@@ -2536,7 +2151,7 @@ ast:eats  rdf:type  owl:ObjectProperty .
 
 ast:Prey  rdf:type  owl:Class .
 
-_:b215  rdfs:subClassOf     ast:Prey ;
+_:b178  rdfs:subClassOf     ast:Prey ;
         rdf:type            owl:Restriction ;
         owl:someValuesFrom  ast:Predator ;
         owl:onProperty      ast:hasPredator .
@@ -2545,7 +2160,7 @@ ast:hasPredator  rdf:type  owl:ObjectProperty .
 
 ast:Predator  rdf:type  owl:Class .
 
-_:b216  rdfs:subClassOf     ast:Scavenger ;
+_:b179  rdfs:subClassOf     ast:Scavenger ;
         rdf:type            owl:Restriction ;
         owl:someValuesFrom  ast:Animalia ;
         owl:onProperty      ast:eats .
@@ -2554,7 +2169,7 @@ ast:eats  rdf:type  owl:ObjectProperty .
 
 ast:Animalia  rdf:type  owl:Class .
 
-_:b217  rdfs:subClassOf     ast:Carnivore ;
+_:b180  rdfs:subClassOf     ast:Carnivore ;
         rdf:type            owl:Restriction ;
         owl:someValuesFrom  ast:Animalia ;
         owl:onProperty      ast:eats .
@@ -2563,7 +2178,7 @@ ast:eats  rdf:type  owl:ObjectProperty .
 
 ast:Animalia  rdf:type  owl:Class .
 
-_:b218  rdfs:subClassOf     ast:Herbivore ;
+_:b181  rdfs:subClassOf     ast:Herbivore ;
         rdf:type            owl:Restriction ;
         owl:someValuesFrom  ast:Plantae ;
         owl:onProperty      ast:eats .
@@ -2572,7 +2187,7 @@ ast:eats  rdf:type  owl:ObjectProperty .
 
 ast:Plantae  rdf:type  owl:Class .
 
-_:b219  rdfs:subClassOf     ast:PrimaryConsumer ;
+_:b182  rdfs:subClassOf     ast:PrimaryConsumer ;
         rdf:type            owl:Restriction ;
         owl:someValuesFrom  ast:Producer ;
         owl:onProperty      ast:eats .
@@ -2586,7 +2201,7 @@ ast:PrimaryConsumer  rdfs:subClassOf  ast:Consumer .
 ast:SecondaryConsumer
         rdfs:subClassOf  ast:Consumer .
 
-_:b220  rdfs:subClassOf     ast:SecondaryConsumer ;
+_:b183  rdfs:subClassOf     ast:SecondaryConsumer ;
         rdf:type            owl:Restriction ;
         owl:someValuesFrom  ast:PrimaryConsumer ;
         owl:onProperty      ast:eats .
@@ -2595,7 +2210,7 @@ ast:eats  rdf:type  owl:ObjectProperty .
 
 ast:PrimaryConsumer  rdf:type  owl:Class .
 
-_:b221  rdfs:subClassOf     ast:TertiaryConsumer ;
+_:b184  rdfs:subClassOf     ast:TertiaryConsumer ;
         rdf:type            owl:Restriction ;
         owl:someValuesFrom  ast:SecondaryConsumer ;
         owl:onProperty      ast:eats .
@@ -2623,7 +2238,8 @@ ex:Longitude  rdfs:subPropertyOf  ast:GeographicPosition ;
 ast:GeographicPosition
         rdfs:range  xsd:float .
 
-ast:Direction  rdf:type  owl:DatatypeProperty .
+ast:Direction  rdfs:range  xsd:string ;
+        rdf:type    owl:DatatypeProperty .
 
 ex:SwimmingDirection  rdfs:subPropertyOf  ast:Direction ;
         rdf:type            owl:DatatypeProperty .
@@ -2634,21 +2250,19 @@ ast:Direction  rdfs:range  xsd:string ;
 ex:WindDirection  rdfs:subPropertyOf  ast:Direction ;
         rdf:type            owl:DatatypeProperty .
 
-ast:Direction  rdfs:range  xsd:string .
-
 ast:Sun  rdfs:subClassOf  ast:Weather .
 
 ast:Sunrise  rdfs:subClassOf  ast:Sun .
 
 xsd:dateTime  rdf:type  rdfs:Datatype .
 
-_:b222  rdf:type            owl:Restriction ;
+_:b185  rdf:type            owl:Restriction ;
         owl:someValuesFrom  xsd:dateTime ;
         owl:onProperty      ast:DateTime .
 
 ast:DateTime  rdf:type  owl:DatatypeProperty .
 
-ast:Sunrise  rdfs:subClassOf  _:b222 .
+ast:Sunrise  rdfs:subClassOf  _:b185 .
 
 ast:Sun  rdfs:subClassOf  ast:Weather .
 
@@ -2656,23 +2270,23 @@ ast:Sunset  rdfs:subClassOf  ast:Sun .
 
 xsd:dateTime  rdf:type  rdfs:Datatype .
 
-_:b223  rdf:type            owl:Restriction ;
+_:b186  rdf:type            owl:Restriction ;
         owl:someValuesFrom  xsd:dateTime ;
         owl:onProperty      ast:DateTime .
 
 ast:DateTime  rdf:type  owl:DatatypeProperty .
 
-ast:Sunset  rdfs:subClassOf  _:b223 .
+ast:Sunset  rdfs:subClassOf  _:b186 .
 
 xsd:string  rdf:type  rdfs:Datatype .
 
-_:b224  rdf:type            owl:Restriction ;
+_:b187  rdf:type            owl:Restriction ;
         owl:someValuesFrom  xsd:string ;
         owl:onProperty      ast:WindDirection .
 
 ast:WindDirection  rdf:type  owl:DatatypeProperty .
 
-ex:Wind  rdfs:subClassOf  _:b224 .
+ex:Wind  rdfs:subClassOf  _:b187 .
 
 ast:Wind  rdfs:subClassOf  ast:Weather .
 
@@ -2680,48 +2294,58 @@ ast:Precipiation  rdfs:subClassOf  ast:Weather .
 
 xsd:integer  rdf:type  rdfs:Datatype .
 
-_:b225  rdf:type            owl:Restriction ;
+_:b188  rdf:type            owl:Restriction ;
         owl:someValuesFrom  xsd:integer ;
         owl:onProperty      ast:PrecipiationAmount .
 
 ast:PrecipiationAmount
         rdf:type  owl:DatatypeProperty .
 
-ast:Precipiation  rdfs:subClassOf  _:b225 .
+ast:Precipiation  rdfs:subClassOf  _:b188 .
 
 xsd:string  rdf:type  rdfs:Datatype .
 
-_:b226  rdf:type            owl:Restriction ;
+_:b189  rdf:type            owl:Restriction ;
         owl:someValuesFrom  xsd:string ;
         owl:onProperty      ast:CurrentDirection .
 
 ast:CurrentDirection  rdf:type  owl:DatatypeProperty .
 
-ast:Current  rdfs:subClassOf  _:b226 .
+ast:Current  rdfs:subClassOf  _:b189 .
 
 xsd:float  rdf:type  rdfs:Datatype .
 
-_:b227  rdf:type            owl:Restriction ;
+_:b190  rdf:type            owl:Restriction ;
         owl:someValuesFrom  xsd:float ;
         owl:onProperty      ast:CurrentStrength .
 
 ast:CurrentStrength  rdf:type  owl:DatatypeProperty .
 
-ast:Current  rdfs:subClassOf  _:b227 .
+ast:Current  rdfs:subClassOf  _:b190 .
 
 xsd:float  rdf:type  rdfs:Datatype .
 
-_:b228  rdf:type            owl:Restriction ;
+_:b191  rdf:type            owl:Restriction ;
         owl:someValuesFrom  xsd:float ;
         owl:onProperty      ast:Latitude .
 
 ast:Latitude  rdf:type  owl:DatatypeProperty .
 
-ast:SalinitySensor  rdfs:subClassOf  _:b228 ;
-        rdfs:subClassOf  ast:Sensor ;
-        rdfs:subClassOf  _:b229 .
+ast:SalinitySensor  rdfs:subClassOf  _:b191 .
 
-_:b229  rdf:type            owl:Restriction ;
+xsd:dateTime  rdf:type  rdfs:Datatype .
+
+_:b192  rdf:type            owl:Restriction ;
+        owl:someValuesFrom  xsd:dateTime ;
+        owl:onProperty      ast:DatePlaced .
+
+ast:DatePlaced  rdf:type  owl:DatatypeProperty .
+
+ast:SalinitySensor  rdfs:subClassOf  _:b192 ;
+        rdfs:subClassOf  ast:Sensor ;
+        rdfs:subClassOf  _:b193 .
+
+_:b193  rdf:type            owl:Restriction ;
         owl:someValuesFrom  ast:Salinity ;
         owl:onProperty      ast:measures .
 
@@ -2731,37 +2355,67 @@ ast:Salinity  rdf:type  owl:Class .
 
 xsd:string  rdf:type  rdfs:Datatype .
 
-_:b230  rdf:type            owl:Restriction ;
+_:b194  rdf:type            owl:Restriction ;
         owl:someValuesFrom  xsd:string ;
         owl:onProperty      ast:SensorStatus .
 
 ast:SensorStatus  rdf:type  owl:DatatypeProperty .
 
-ast:SalinitySensor  rdfs:subClassOf  _:b230 .
+ast:SalinitySensor  rdfs:subClassOf  _:b194 .
 
 xsd:float  rdf:type  rdfs:Datatype .
 
-_:b231  rdf:type            owl:Restriction ;
+_:b195  rdf:type            owl:Restriction ;
         owl:someValuesFrom  xsd:float ;
         owl:onProperty      ast:Longitude .
 
 ast:Longitude  rdf:type  owl:DatatypeProperty .
 
-ast:SalinitySensor  rdfs:subClassOf  _:b231 .
+ast:SalinitySensor  rdfs:subClassOf  _:b195 .
+
+xsd:double  rdf:type  rdfs:Datatype .
+
+_:b196  rdf:type            owl:Restriction ;
+        owl:someValuesFrom  xsd:double ;
+        owl:onProperty      ast:MaximumValue .
+
+ast:MaximumValue  rdf:type  owl:DatatypeProperty .
+
+ast:SalinitySensor  rdfs:subClassOf  _:b196 .
+
+xsd:double  rdf:type  rdfs:Datatype .
+
+_:b197  rdf:type            owl:Restriction ;
+        owl:someValuesFrom  xsd:double ;
+        owl:onProperty      ast:MinimumValue .
+
+ast:MinimumValue  rdf:type  owl:DatatypeProperty .
+
+ast:SalinitySensor  rdfs:subClassOf  _:b197 .
 
 xsd:float  rdf:type  rdfs:Datatype .
 
-_:b232  rdf:type            owl:Restriction ;
+_:b198  rdf:type            owl:Restriction ;
         owl:someValuesFrom  xsd:float ;
         owl:onProperty      ast:Latitude .
 
 ast:Latitude  rdf:type  owl:DatatypeProperty .
 
-ast:TurbiditySensor  rdfs:subClassOf  _:b232 ;
-        rdfs:subClassOf  ast:Sensor ;
-        rdfs:subClassOf  _:b233 .
+ast:TurbiditySensor  rdfs:subClassOf  _:b198 .
 
-_:b233  rdf:type            owl:Restriction ;
+xsd:dateTime  rdf:type  rdfs:Datatype .
+
+_:b199  rdf:type            owl:Restriction ;
+        owl:someValuesFrom  xsd:dateTime ;
+        owl:onProperty      ast:DatePlaced .
+
+ast:DatePlaced  rdf:type  owl:DatatypeProperty .
+
+ast:TurbiditySensor  rdfs:subClassOf  _:b199 ;
+        rdfs:subClassOf  ast:Sensor ;
+        rdfs:subClassOf  _:b200 .
+
+_:b200  rdf:type            owl:Restriction ;
         owl:someValuesFrom  ast:Turbidity ;
         owl:onProperty      ast:measures .
 
@@ -2771,38 +2425,69 @@ ast:Turbidity  rdf:type  owl:Class .
 
 xsd:string  rdf:type  rdfs:Datatype .
 
-_:b234  rdf:type            owl:Restriction ;
+_:b201  rdf:type            owl:Restriction ;
         owl:someValuesFrom  xsd:string ;
         owl:onProperty      ast:SensorStatus .
 
 ast:SensorStatus  rdf:type  owl:DatatypeProperty .
 
-ast:TurbiditySensor  rdfs:subClassOf  _:b234 .
+ast:TurbiditySensor  rdfs:subClassOf  _:b201 .
 
 xsd:float  rdf:type  rdfs:Datatype .
 
-_:b235  rdf:type            owl:Restriction ;
+_:b202  rdf:type            owl:Restriction ;
         owl:someValuesFrom  xsd:float ;
         owl:onProperty      ast:Longitude .
 
 ast:Longitude  rdf:type  owl:DatatypeProperty .
 
-ast:TurbiditySensor  rdfs:subClassOf  _:b235 .
+ast:TurbiditySensor  rdfs:subClassOf  _:b202 .
+
+xsd:double  rdf:type  rdfs:Datatype .
+
+_:b203  rdf:type            owl:Restriction ;
+        owl:someValuesFrom  xsd:double ;
+        owl:onProperty      ast:MaximumValue .
+
+ast:MaximumValue  rdf:type  owl:DatatypeProperty .
+
+ast:TurbiditySensor  rdfs:subClassOf  _:b203 .
+
+xsd:double  rdf:type  rdfs:Datatype .
+
+_:b204  rdf:type            owl:Restriction ;
+        owl:someValuesFrom  xsd:double ;
+        owl:onProperty      ast:MinimumValue .
+
+ast:MinimumValue  rdf:type  owl:DatatypeProperty .
+
+ast:TurbiditySensor  rdfs:subClassOf  _:b204 .
 
 xsd:float  rdf:type  rdfs:Datatype .
 
-_:b236  rdf:type            owl:Restriction ;
+_:b205  rdf:type            owl:Restriction ;
         owl:someValuesFrom  xsd:float ;
         owl:onProperty      ast:Latitude .
 
 ast:Latitude  rdf:type  owl:DatatypeProperty .
 
 ast:CarbonDioxideSensor
-        rdfs:subClassOf  _:b236 ;
-        rdfs:subClassOf  ast:Sensor ;
-        rdfs:subClassOf  _:b237 .
+        rdfs:subClassOf  _:b205 .
 
-_:b237  rdf:type            owl:Restriction ;
+xsd:dateTime  rdf:type  rdfs:Datatype .
+
+_:b206  rdf:type            owl:Restriction ;
+        owl:someValuesFrom  xsd:dateTime ;
+        owl:onProperty      ast:DatePlaced .
+
+ast:DatePlaced  rdf:type  owl:DatatypeProperty .
+
+ast:CarbonDioxideSensor
+        rdfs:subClassOf  _:b206 ;
+        rdfs:subClassOf  ast:Sensor ;
+        rdfs:subClassOf  _:b207 .
+
+_:b207  rdf:type            owl:Restriction ;
         owl:someValuesFrom  ast:CarbonDioxideMeasurement ;
         owl:onProperty      ast:measures .
 
@@ -2813,40 +2498,73 @@ ast:CarbonDioxideMeasurement
 
 xsd:string  rdf:type  rdfs:Datatype .
 
-_:b238  rdf:type            owl:Restriction ;
+_:b208  rdf:type            owl:Restriction ;
         owl:someValuesFrom  xsd:string ;
         owl:onProperty      ast:SensorStatus .
 
 ast:SensorStatus  rdf:type  owl:DatatypeProperty .
 
 ast:CarbonDioxideSensor
-        rdfs:subClassOf  _:b238 .
+        rdfs:subClassOf  _:b208 .
 
 xsd:float  rdf:type  rdfs:Datatype .
 
-_:b239  rdf:type            owl:Restriction ;
+_:b209  rdf:type            owl:Restriction ;
         owl:someValuesFrom  xsd:float ;
         owl:onProperty      ast:Longitude .
 
 ast:Longitude  rdf:type  owl:DatatypeProperty .
 
 ast:CarbonDioxideSensor
-        rdfs:subClassOf  _:b239 .
+        rdfs:subClassOf  _:b209 .
 
 xsd:float  rdf:type  rdfs:Datatype .
 
-_:b240  rdf:type            owl:Restriction ;
+_:b210  rdf:type            owl:Restriction ;
+        owl:someValuesFrom  xsd:float ;
+        owl:onProperty      ast:MaximumValue .
+
+ast:MaximumValue  rdf:type  owl:DatatypeProperty .
+
+ast:CarbonDioxideSensor
+        rdfs:subClassOf  _:b210 .
+
+xsd:float  rdf:type  rdfs:Datatype .
+
+_:b211  rdf:type            owl:Restriction ;
+        owl:someValuesFrom  xsd:float ;
+        owl:onProperty      ast:MinimumValue .
+
+ast:MinimumValue  rdf:type  owl:DatatypeProperty .
+
+ast:CarbonDioxideSensor
+        rdfs:subClassOf  _:b211 .
+
+xsd:float  rdf:type  rdfs:Datatype .
+
+_:b212  rdf:type            owl:Restriction ;
         owl:someValuesFrom  xsd:float ;
         owl:onProperty      ast:Latitude .
 
 ast:Latitude  rdf:type  owl:DatatypeProperty .
 
 ast:ChlorophyllSensor
-        rdfs:subClassOf  _:b240 ;
-        rdfs:subClassOf  ast:Sensor ;
-        rdfs:subClassOf  _:b241 .
+        rdfs:subClassOf  _:b212 .
 
-_:b241  rdf:type            owl:Restriction ;
+xsd:dateTime  rdf:type  rdfs:Datatype .
+
+_:b213  rdf:type            owl:Restriction ;
+        owl:someValuesFrom  xsd:dateTime ;
+        owl:onProperty      ast:DatePlaced .
+
+ast:DatePlaced  rdf:type  owl:DatatypeProperty .
+
+ast:ChlorophyllSensor
+        rdfs:subClassOf  _:b213 ;
+        rdfs:subClassOf  ast:Sensor ;
+        rdfs:subClassOf  _:b214 .
+
+_:b214  rdf:type            owl:Restriction ;
         owl:someValuesFrom  ast:Chlorophyll ;
         owl:onProperty      ast:measures .
 
@@ -2856,25 +2574,57 @@ ast:Chlorophyll  rdf:type  owl:Class .
 
 xsd:string  rdf:type  rdfs:Datatype .
 
-_:b242  rdf:type            owl:Restriction ;
+_:b215  rdf:type            owl:Restriction ;
         owl:someValuesFrom  xsd:string ;
         owl:onProperty      ast:SensorStatus .
 
 ast:SensorStatus  rdf:type  owl:DatatypeProperty .
 
 ast:ChlorophyllSensor
-        rdfs:subClassOf  _:b242 .
+        rdfs:subClassOf  _:b215 .
 
 xsd:float  rdf:type  rdfs:Datatype .
 
-_:b243  rdf:type            owl:Restriction ;
+_:b216  rdf:type            owl:Restriction ;
         owl:someValuesFrom  xsd:float ;
         owl:onProperty      ast:Longitude .
 
 ast:Longitude  rdf:type  owl:DatatypeProperty .
 
 ast:ChlorophyllSensor
-        rdfs:subClassOf  _:b243 .
+        rdfs:subClassOf  _:b216 .
+
+xsd:float  rdf:type  rdfs:Datatype .
+
+_:b217  rdf:type            owl:Restriction ;
+        owl:someValuesFrom  xsd:float ;
+        owl:onProperty      ast:MaximumValue .
+
+ast:MaximumValue  rdf:type  owl:DatatypeProperty .
+
+ast:ChlorophyllSensor
+        rdfs:subClassOf  _:b217 .
+
+xsd:float  rdf:type  rdfs:Datatype .
+
+_:b218  rdf:type            owl:Restriction ;
+        owl:someValuesFrom  xsd:float ;
+        owl:onProperty      ast:MinimumValue .
+
+ast:MinimumValue  rdf:type  owl:DatatypeProperty .
+
+ast:ChlorophyllSensor
+        rdfs:subClassOf  _:b218 .
+
+xsd:dateTime  rdf:type  rdfs:Datatype .
+
+_:b219  rdf:type            owl:Restriction ;
+        owl:someValuesFrom  xsd:dateTime ;
+        owl:onProperty      ast:DatePlaced .
+
+ast:DatePlaced  rdf:type  owl:DatatypeProperty .
+
+ast:Lander  rdfs:subClassOf  _:b219 .
 
 ast:SalinitySensor  rdfs:subClassOf  ast:Lander .
 
@@ -2882,46 +2632,36 @@ ast:TurbiditySensor  rdfs:subClassOf  ast:Lander .
 
 xsd:float  rdf:type  rdfs:Datatype .
 
-_:b244  rdf:type            owl:Restriction ;
+_:b220  rdf:type            owl:Restriction ;
         owl:someValuesFrom  xsd:float ;
         owl:onProperty      ast:Longitude .
 
 ast:Longitude  rdf:type  owl:DatatypeProperty .
 
-ast:Lander  rdfs:subClassOf  _:b244 .
+ast:Lander  rdfs:subClassOf  _:b220 .
 
 xsd:float  rdf:type  rdfs:Datatype .
 
-_:b245  rdf:type            owl:Restriction ;
+_:b221  rdf:type            owl:Restriction ;
         owl:someValuesFrom  xsd:float ;
         owl:onProperty      ast:Latitude .
 
 ast:Latitude  rdf:type  owl:DatatypeProperty .
 
-ast:Lander  rdfs:subClassOf  _:b245 .
+ast:Lander  rdfs:subClassOf  _:b221 .
 
 xsd:float  rdf:type  rdfs:Datatype .
 
-_:b246  rdf:type            owl:Restriction ;
+_:b222  rdf:type            owl:Restriction ;
         owl:someValuesFrom  xsd:float ;
         owl:onProperty      ast:Latitude .
 
 ast:Latitude  rdf:type  owl:DatatypeProperty .
 
-ast:Hydrophone  rdfs:subClassOf  _:b246 .
+ast:Hydrophone  rdfs:subClassOf  _:b222 ;
+        rdfs:subClassOf  _:b223 .
 
-xsd:float  rdf:type  rdfs:Datatype .
-
-_:b247  rdf:type            owl:Restriction ;
-        owl:someValuesFrom  xsd:float ;
-        owl:onProperty      ast:Longitude .
-
-ast:Longitude  rdf:type  owl:DatatypeProperty .
-
-ast:Hydrophone  rdfs:subClassOf  _:b247 ;
-        rdfs:subClassOf  _:b248 .
-
-_:b248  rdf:type            owl:Restriction ;
+_:b223  rdf:type            owl:Restriction ;
         owl:someValuesFrom  ast:SoundMeasurement ;
         owl:onProperty      ast:measures .
 
@@ -2931,26 +2671,36 @@ ast:SoundMeasurement  rdf:type  owl:Class .
 
 xsd:float  rdf:type  rdfs:Datatype .
 
-_:b249  rdf:type            owl:Restriction ;
-        owl:someValuesFrom  xsd:float ;
-        owl:onProperty      ast:Latitude .
-
-ast:Latitude  rdf:type  owl:DatatypeProperty .
-
-ast:EchoSounder  rdfs:subClassOf  _:b249 .
-
-xsd:float  rdf:type  rdfs:Datatype .
-
-_:b250  rdf:type            owl:Restriction ;
+_:b224  rdf:type            owl:Restriction ;
         owl:someValuesFrom  xsd:float ;
         owl:onProperty      ast:Longitude .
 
 ast:Longitude  rdf:type  owl:DatatypeProperty .
 
-ast:EchoSounder  rdfs:subClassOf  _:b250 ;
-        rdfs:subClassOf  _:b251 .
+ast:Hydrophone  rdfs:subClassOf  _:b224 .
 
-_:b251  rdf:type            owl:Restriction ;
+xsd:float  rdf:type  rdfs:Datatype .
+
+_:b225  rdf:type            owl:Restriction ;
+        owl:someValuesFrom  xsd:float ;
+        owl:onProperty      ast:Longitude .
+
+ast:Longitude  rdf:type  owl:DatatypeProperty .
+
+ast:EchoSounder  rdfs:subClassOf  _:b225 .
+
+xsd:float  rdf:type  rdfs:Datatype .
+
+_:b226  rdf:type            owl:Restriction ;
+        owl:someValuesFrom  xsd:float ;
+        owl:onProperty      ast:Latitude .
+
+ast:Latitude  rdf:type  owl:DatatypeProperty .
+
+ast:EchoSounder  rdfs:subClassOf  _:b226 ;
+        rdfs:subClassOf  _:b227 .
+
+_:b227  rdf:type            owl:Restriction ;
         owl:someValuesFrom  ast:DistanceMeasurement ;
         owl:onProperty      ast:measures .
 
@@ -2959,9 +2709,9 @@ ast:measures  rdf:type  owl:ObjectProperty .
 ast:DistanceMeasurement
         rdf:type  owl:Class .
 
-ast:EchoSounder  rdfs:subClassOf  _:b252 .
+ast:EchoSounder  rdfs:subClassOf  _:b228 .
 
-_:b252  rdf:type            owl:Restriction ;
+_:b228  rdf:type            owl:Restriction ;
         owl:someValuesFrom  ast:StrengthMeasurement ;
         owl:onProperty      ast:measures .
 
@@ -2970,7 +2720,64 @@ ast:measures  rdf:type  owl:ObjectProperty .
 ast:StrengthMeasurement
         rdf:type  owl:Class .
 
-_:b253  rdfs:subClassOf     ast:Producer ;
+ast:WaterQuality  rdfs:subClassOf  _:b229 .
+
+_:b229  rdf:type            owl:Restriction ;
+        owl:someValuesFrom  ast:Turbidity ;
+        owl:onProperty      ast:affectedBy .
+
+ast:affectedBy  rdf:type  owl:ObjectProperty .
+
+ast:Turbidity  rdf:type  owl:Class .
+
+xsd:double  rdf:type  rdfs:Datatype .
+
+_:b230  rdf:type            owl:Restriction ;
+        owl:someValuesFrom  xsd:double ;
+        owl:onProperty      ast:Quality .
+
+ast:Quality  rdf:type  owl:DatatypeProperty .
+
+ast:WaterQuality  rdfs:subClassOf  _:b230 ;
+        rdfs:subClassOf  ast:Measurement .
+
+ast:WaterClarity  rdfs:subClassOf  ast:Measurement .
+
+xsd:double  rdf:type  rdfs:Datatype .
+
+_:b231  rdf:type            owl:Restriction ;
+        owl:someValuesFrom  xsd:double ;
+        owl:onProperty      ast:Clarity .
+
+ast:Clarity  rdf:type  owl:DatatypeProperty .
+
+ast:WaterClarity  rdfs:subClassOf  _:b231 ;
+        rdfs:subClassOf  _:b232 .
+
+_:b232  rdf:type            owl:Restriction ;
+        owl:someValuesFrom  ast:Turbidity ;
+        owl:onProperty      ast:affectedBy .
+
+ast:affectedBy  rdf:type  owl:ObjectProperty .
+
+ast:Turbidity  rdf:type  owl:Class .
+
+xsd:double  rdf:type  rdfs:Datatype .
+
+_:b233  rdf:type            owl:Restriction ;
+        owl:someValuesFrom  xsd:double ;
+        owl:onProperty      ast:PlanktonGrowth .
+
+ast:PlanktonGrowth  rdf:type  owl:DatatypeProperty .
+
+ast:Turbidity  rdfs:subClassOf  _:b233 .
+
+ast:Growth  rdf:type  owl:DatatypeProperty .
+
+ast:PlanktonGrowth  rdfs:subPropertyOf  ast:Growth ;
+        rdf:type            owl:DatatypeProperty .
+
+_:b234  rdfs:subClassOf     ast:Producer ;
         rdf:type            owl:Restriction ;
         owl:someValuesFrom  ast:Sun ;
         owl:onProperty      ast:hasEnergySource .
@@ -2978,6 +2785,16 @@ _:b253  rdfs:subClassOf     ast:Producer ;
 ast:hasEnergySource  rdf:type  owl:ObjectProperty .
 
 ast:Sun  rdf:type  owl:Class .
+
+xsd:double  rdf:type  rdfs:Datatype .
+
+_:b235  rdf:type            owl:Restriction ;
+        owl:someValuesFrom  xsd:double ;
+        owl:onProperty      ast:PlanktonGrowth .
+
+ast:PlanktonGrowth  rdf:type  owl:DatatypeProperty .
+
+ast:Plankton  rdfs:subClassOf  _:b235 .
 
 ast:GlobalCategory  rdfs:range  xsd:string .
 
@@ -3036,11 +2853,395 @@ ast:Strength  rdfs:range  xsd:float ;
 ast:CurrentStrength  rdfs:subPropertyOf  ast:Strength ;
         rdf:type            owl:DatatypeProperty .
 
-ast:Direction  rdf:type  owl:DatatypeProperty .
+ast:Direction  rdfs:range  xsd:string ;
+        rdf:type    owl:DatatypeProperty .
 
 ast:CurrentDirection  rdfs:subPropertyOf  ast:Direction ;
         rdf:type            owl:DatatypeProperty .
 
-ast:Direction  rdfs:range  xsd:string .
-
 ast:Name  rdfs:range  xsd:string .
+
+ast:DataRangeSensor  rdf:type  owl:DatatypeProperty .
+
+ast:MinimumValue  rdfs:subPropertyOf  ast:DataRangeSensor ;
+        rdf:type            owl:DatatypeProperty .
+
+ast:DataRangeSensor  rdf:type  owl:DatatypeProperty .
+
+ast:MinimumValue  rdfs:subPropertyOf  ast:DataRangeSensor ;
+        rdf:type            owl:DatatypeProperty .
+
+ast:DateTime  rdf:type  owl:DatatypeProperty .
+
+ast:DatePlaced  rdfs:subPropertyOf  ast:DateTime ;
+        rdf:type            owl:DatatypeProperty .
+
+ast:DateTime  rdfs:range  xsd:dateTime .
+
+xsd:float  rdf:type  rdfs:Datatype .
+
+_:b236  rdf:type            owl:Restriction ;
+        owl:someValuesFrom  xsd:float ;
+        owl:onProperty      ast:Latitude .
+
+ast:Latitude  rdf:type  owl:DatatypeProperty .
+
+ast:morhua  rdfs:subClassOf  _:b236 .
+
+ast:ClimateVulnerability
+        rdf:type  owl:DatatypeProperty .
+
+_:b237  rdf:type        owl:Restriction ;
+        owl:hasValue    "0.65"^^xsd:float ;
+        owl:onProperty  ast:ClimateVulnerability .
+
+ast:morhua  rdfs:subClassOf  _:b237 .
+
+ast:FishingVulnerability
+        rdf:type  owl:DatatypeProperty .
+
+_:b238  rdf:type        owl:Restriction ;
+        owl:hasValue    "0.39"^^xsd:float ;
+        owl:onProperty  ast:FishingVulnerability .
+
+ast:morhua  rdfs:subClassOf  _:b238 ;
+        rdfs:subClassOf  _:b239 .
+
+_:b239  rdf:type            owl:Restriction ;
+        owl:someValuesFrom  ast:WaterClarity ;
+        owl:onProperty      ast:affectedBy .
+
+ast:affectedBy  rdf:type  owl:ObjectProperty .
+
+ast:WaterClarity  rdf:type  owl:Class .
+
+ast:morhua  rdfs:subClassOf  _:b240 .
+
+_:b240  rdf:type            owl:Restriction ;
+        owl:someValuesFrom  ast:WaterQuality ;
+        owl:onProperty      ast:affectedBy .
+
+ast:affectedBy  rdf:type  owl:ObjectProperty .
+
+ast:WaterQuality  rdf:type  owl:Class .
+
+ast:Chordata  rdfs:subClassOf  ast:Animalia .
+
+ast:maxDepthThrivesOn
+        rdf:type  owl:DatatypeProperty .
+
+_:b241  rdf:type        owl:Restriction ;
+        owl:hasValue    "200"^^xsd:double ;
+        owl:onProperty  ast:maxDepthThrivesOn .
+
+ast:morhua  rdfs:subClassOf  _:b241 .
+
+ast:minSpawningDepth  rdf:type  owl:DatatypeProperty .
+
+_:b242  rdf:type        owl:Restriction ;
+        owl:hasValue    "50"^^xsd:double ;
+        owl:onProperty  ast:minSpawningDepth .
+
+ast:morhua  rdfs:subClassOf  _:b242 .
+
+ast:GlobalCategory  rdf:type  owl:DatatypeProperty .
+
+_:b243  rdf:type        owl:Restriction ;
+        owl:hasValue    "VU - Vulnerable" ;
+        owl:onProperty  ast:GlobalCategory .
+
+ast:morhua  rdfs:subClassOf  _:b243 .
+
+ast:CommonLength  rdf:type  owl:DatatypeProperty .
+
+_:b244  rdf:type        owl:Restriction ;
+        owl:hasValue    "100"^^xsd:float ;
+        owl:onProperty  ast:CommonLength .
+
+ast:morhua  rdfs:subClassOf  _:b244 .
+
+ast:maxDepth  rdf:type  owl:DatatypeProperty .
+
+_:b245  rdf:type        owl:Restriction ;
+        owl:hasValue    "600"^^xsd:double ;
+        owl:onProperty  ast:maxDepth .
+
+ast:morhua  rdfs:subClassOf  _:b245 .
+
+ast:minDepth  rdf:type  owl:DatatypeProperty .
+
+_:b246  rdf:type        owl:Restriction ;
+        owl:hasValue    "0"^^xsd:double ;
+        owl:onProperty  ast:minDepth .
+
+ast:morhua  rdfs:subClassOf  _:b246 .
+
+ast:maxSpawningTemperature
+        rdf:type  owl:DatatypeProperty .
+
+_:b247  rdf:type        owl:Restriction ;
+        owl:hasValue    "12"^^xsd:double ;
+        owl:onProperty  ast:maxSpawningTemperature .
+
+ast:morhua  rdfs:subClassOf  _:b247 ;
+        rdfs:subClassOf  ast:Fish .
+
+ast:minDepthThrivesOn
+        rdf:type  owl:DatatypeProperty .
+
+_:b248  rdf:type        owl:Restriction ;
+        owl:hasValue    "150"^^xsd:double ;
+        owl:onProperty  ast:minDepthThrivesOn .
+
+ast:morhua  rdfs:subClassOf  _:b248 .
+
+ast:Gadiformes  rdfs:subClassOf  ast:Actinopterygii .
+
+xsd:float  rdf:type  rdfs:Datatype .
+
+_:b249  rdf:type            owl:Restriction ;
+        owl:someValuesFrom  xsd:float ;
+        owl:onProperty      ast:Longitude .
+
+ast:Longitude  rdf:type  owl:DatatypeProperty .
+
+ast:morhua  rdfs:subClassOf  _:b249 .
+
+ast:maxTemperature  rdf:type  owl:DatatypeProperty .
+
+_:b250  rdf:type        owl:Restriction ;
+        owl:hasValue    "15"^^xsd:double ;
+        owl:onProperty  ast:maxTemperature .
+
+ast:morhua  rdfs:subClassOf  _:b250 .
+
+ast:preferredMaxSpawningTemperature
+        rdf:type  owl:DatatypeProperty .
+
+_:b251  rdf:type        owl:Restriction ;
+        owl:hasValue    "6"^^xsd:double ;
+        owl:onProperty  ast:preferredMaxSpawningTemperature .
+
+ast:morhua  rdfs:subClassOf  _:b251 ;
+        rdfs:subClassOf  ast:Gadus .
+
+ast:Animalia  rdfs:subClassOf  ast:Eukaryota .
+
+ast:Gadus  rdfs:subClassOf  ast:Gadidae .
+
+ast:ScientificName  rdf:type  owl:DatatypeProperty .
+
+_:b252  rdf:type        owl:Restriction ;
+        owl:hasValue    "Gadus morhua" ;
+        owl:onProperty  ast:ScientificName .
+
+ast:morhua  rdfs:subClassOf  _:b252 ;
+        rdfs:subClassOf  _:b253 .
+
+_:b253  rdf:type            owl:Restriction ;
+        owl:someValuesFrom  ast:scombrus ;
+        owl:onProperty      ast:eats .
+
+ast:eats  rdf:type  owl:ObjectProperty .
+
+ast:scombrus  rdf:type  owl:Class .
+
+ast:morhua  rdfs:subClassOf  _:b254 .
+
+_:b254  rdf:type            owl:Restriction ;
+        owl:someValuesFrom  ast:superba ;
+        owl:onProperty      ast:eats .
+
+ast:eats  rdf:type  owl:ObjectProperty .
+
+ast:superba  rdf:type  owl:Class .
+
+ast:NorwegianCategory
+        rdf:type  owl:DatatypeProperty .
+
+_:b255  rdf:type        owl:Restriction ;
+        owl:hasValue    "LC - Viable" ;
+        owl:onProperty  ast:NorwegianCategory .
+
+ast:morhua  rdfs:subClassOf  _:b255 .
+
+ast:minSpawningTemperature
+        rdf:type  owl:DatatypeProperty .
+
+_:b256  rdf:type        owl:Restriction ;
+        owl:hasValue    "0"^^xsd:double ;
+        owl:onProperty  ast:minSpawningTemperature .
+
+ast:morhua  rdfs:subClassOf  _:b256 .
+
+ast:Actinopterygii  rdfs:subClassOf  ast:Chordata .
+
+ast:Name  rdf:type  owl:DatatypeProperty .
+
+_:b257  rdf:type        owl:Restriction ;
+        owl:hasValue    "Atlantic Cod" ;
+        owl:onProperty  ast:Name .
+
+ast:morhua  rdfs:subClassOf  _:b257 .
+
+ast:preferredMinSpawningTemperature
+        rdf:type  owl:DatatypeProperty .
+
+_:b258  rdf:type        owl:Restriction ;
+        owl:hasValue    "0"^^xsd:double ;
+        owl:onProperty  ast:preferredMinSpawningTemperature .
+
+ast:morhua  rdfs:subClassOf  _:b258 .
+
+ast:Gadidae  rdfs:subClassOf  ast:Gadiformes .
+
+ast:MaxLength  rdf:type  owl:DatatypeProperty .
+
+_:b259  rdf:type        owl:Restriction ;
+        owl:hasValue    "200"^^xsd:float ;
+        owl:onProperty  ast:MaxLength .
+
+ast:morhua  rdfs:subClassOf  _:b259 .
+
+ast:minTemperature  rdf:type  owl:DatatypeProperty .
+
+_:b260  rdf:type        owl:Restriction ;
+        owl:hasValue    "0"^^xsd:double ;
+        owl:onProperty  ast:minTemperature .
+
+ast:morhua  rdfs:subClassOf  _:b260 .
+
+ast:maxSpawningDepth  rdf:type  owl:DatatypeProperty .
+
+_:b261  rdf:type        owl:Restriction ;
+        owl:hasValue    "200"^^xsd:double ;
+        owl:onProperty  ast:maxSpawningDepth .
+
+ast:morhua  rdfs:subClassOf  _:b261 .
+
+xsd:float  rdf:type  rdfs:Datatype .
+
+_:b262  rdf:type            owl:Restriction ;
+        owl:someValuesFrom  xsd:float ;
+        owl:onProperty      ast:Latitude .
+
+ast:Latitude  rdf:type  owl:DatatypeProperty .
+
+ast:scombrus  rdfs:subClassOf  _:b262 .
+
+ast:ClimateVulnerability
+        rdf:type  owl:DatatypeProperty .
+
+_:b263  rdf:type        owl:Restriction ;
+        owl:hasValue    "0.1"^^xsd:float ;
+        owl:onProperty  ast:ClimateVulnerability .
+
+ast:scombrus  rdfs:subClassOf  _:b263 .
+
+ast:FishingVulnerability
+        rdf:type  owl:DatatypeProperty .
+
+_:b264  rdf:type        owl:Restriction ;
+        owl:hasValue    "0.3"^^xsd:float ;
+        owl:onProperty  ast:FishingVulnerability .
+
+ast:scombrus  rdfs:subClassOf  _:b264 .
+
+ast:Chordata  rdfs:subClassOf  ast:Animalia .
+
+ast:maxDepthThrivesOn
+        rdf:type  owl:DatatypeProperty .
+
+_:b265  rdf:type        owl:Restriction ;
+        owl:hasValue    "200"^^xsd:double ;
+        owl:onProperty  ast:maxDepthThrivesOn .
+
+ast:scombrus  rdfs:subClassOf  _:b265 .
+
+ast:maxDepth  rdf:type  owl:DatatypeProperty .
+
+_:b266  rdf:type        owl:Restriction ;
+        owl:hasValue    "1000"^^xsd:double ;
+        owl:onProperty  ast:maxDepth .
+
+ast:scombrus  rdfs:subClassOf  _:b266 .
+
+ast:minDepth  rdf:type  owl:DatatypeProperty .
+
+_:b267  rdf:type        owl:Restriction ;
+        owl:hasValue    "0"^^xsd:double ;
+        owl:onProperty  ast:minDepth .
+
+ast:scombrus  rdfs:subClassOf  _:b267 ;
+        rdfs:subClassOf  ast:Fish .
+
+ast:minDepthThrivesOn
+        rdf:type  owl:DatatypeProperty .
+
+_:b268  rdf:type        owl:Restriction ;
+        owl:hasValue    "0"^^xsd:double ;
+        owl:onProperty  ast:minDepthThrivesOn .
+
+ast:scombrus  rdfs:subClassOf  _:b268 .
+
+ast:Scombriformes  rdfs:subClassOf  ast:Actinopterygii .
+
+xsd:float  rdf:type  rdfs:Datatype .
+
+_:b269  rdf:type            owl:Restriction ;
+        owl:someValuesFrom  xsd:float ;
+        owl:onProperty      ast:Longitude .
+
+ast:Longitude  rdf:type  owl:DatatypeProperty .
+
+ast:scombrus  rdfs:subClassOf  _:b269 .
+
+ast:maxTemperature  rdf:type  owl:DatatypeProperty .
+
+_:b270  rdf:type        owl:Restriction ;
+        owl:hasValue    "17.5"^^xsd:double ;
+        owl:onProperty  ast:maxTemperature .
+
+ast:scombrus  rdfs:subClassOf  _:b270 ;
+        rdfs:subClassOf  ast:Scomber .
+
+ast:Animalia  rdfs:subClassOf  ast:Eukaryota .
+
+ast:Scomber  rdfs:subClassOf  ast:Scombridae .
+
+ast:ScientificName  rdf:type  owl:DatatypeProperty .
+
+_:b271  rdf:type        owl:Restriction ;
+        owl:hasValue    "Scomber scombrus" ;
+        owl:onProperty  ast:ScientificName .
+
+ast:scombrus  rdfs:subClassOf  _:b271 ;
+        rdfs:subClassOf  _:b272 .
+
+_:b272  rdf:type            owl:Restriction ;
+        owl:someValuesFrom  ast:superba ;
+        owl:onProperty      ast:eats .
+
+ast:eats  rdf:type  owl:ObjectProperty .
+
+ast:superba  rdf:type  owl:Class .
+
+ast:Actinopterygii  rdfs:subClassOf  ast:Chordata .
+
+ast:Name  rdf:type  owl:DatatypeProperty .
+
+_:b273  rdf:type        owl:Restriction ;
+        owl:hasValue    "Atlantic Mackerel" ;
+        owl:onProperty  ast:Name .
+
+ast:scombrus  rdfs:subClassOf  _:b273 .
+
+ast:Scombridae  rdfs:subClassOf  ast:Scombriformes .
+
+ast:minTemperature  rdf:type  owl:DatatypeProperty .
+
+_:b274  rdf:type        owl:Restriction ;
+        owl:hasValue    "7"^^xsd:double ;
+        owl:onProperty  ast:minTemperature .
+
+ast:scombrus  rdfs:subClassOf  _:b274 .
